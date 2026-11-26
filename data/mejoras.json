@@ -1,123 +1,106 @@
 {
- "nota": "Propuestas de señalización ligadas a las problemáticas del documento de diagnóstico, en español (es), inglés (en) y portugués (pt).",
+ "nota": "Piezas de señalización de BAQ Routes según el documento «Barranquilla 360 · Sprint 2 · Plan operativo y prototipo» (sección 05). Colores, materiales y ubicaciones son especificaciones propuestas que requieren prueba y permiso.",
  "mejoras": [
   {
    "es": {
-    "titulo": "Letreros trilingües de próxima parada",
-    "propuesta": "Pantallas en buses y estaciones en español, inglés y portugués con la próxima estación y el hotel o atractivo más cercano, como el letrero de arriba.",
-    "problema": "Diagnóstico 3.3: hinchas extranjeros (Boca Juniors, Atlético Mineiro) en la final de la Sudamericana; un Mundial multiplica los idiomas."
+    "titulo": "Directorio general",
+    "propuesta": "Mapa con «usted está aquí», códigos B01–B05 y conexiones.",
+    "problema": "Dónde: salida de llegadas del aeropuerto, estaciones, hoteles y terminales."
    },
    "en": {
-    "titulo": "Trilingual next-stop signs",
-    "propuesta": "Screens on buses and in stations in Spanish, English and Portuguese, showing the next station and the nearest hotel or attraction, like the sign above.",
-    "problema": "Diagnosis 3.3: foreign fans (Boca Juniors, Atlético Mineiro) at the Sudamericana final; a World Cup multiplies the languages."
+    "titulo": "General directory",
+    "propuesta": "Map with \"you are here\", codes B01–B05 and connections.",
+    "problema": "Where: airport arrivals exit, stations, hotels and terminals."
    },
    "pt": {
-    "titulo": "Placas trilíngues de próxima parada",
-    "propuesta": "Telas nos ônibus e estações em espanhol, inglês e português com a próxima estação e o hotel ou atração mais próximo, como a placa acima.",
-    "problema": "Diagnóstico 3.3: torcedores estrangeiros (Boca Juniors, Atlético Mineiro) na final da Sul-Americana; uma Copa do Mundo multiplica os idiomas."
+    "titulo": "Diretório geral",
+    "propuesta": "Mapa com «você está aqui», códigos B01–B05 e conexões.",
+    "problema": "Onde: saída de desembarque do aeroporto, estações, hotéis e terminais."
    }
   },
   {
    "es": {
-    "titulo": "Mapa «usted está aquí» con radios a pie",
-    "propuesta": "En cada estación, un mapa con los hoteles a 5 y 10 minutos caminando y la salida que conviene tomar.",
-    "problema": "Diagnóstico 3.3: el hospedaje está disperso y muchos visitantes se alojaron fuera de la ciudad; también se reportó que la estación Joe Arroyo necesita mejor señalización de rutas y zonas de espera."
+    "titulo": "Direccional y confirmación",
+    "propuesta": "Destino, flecha y distancia medida, antes de cada decisión y repetida después.",
+    "problema": "Dónde: antes de bifurcaciones, giros y transbordos, y otra vez después."
    },
    "en": {
-    "titulo": "“You are here” map with walking radii",
-    "propuesta": "At each station, a map with hotels within 5 and 10 minutes on foot and the best exit to take.",
-    "problema": "Diagnosis 3.3: lodging is scattered and many visitors stayed outside the city; reports also say Joe Arroyo station needs better route and waiting-area signage."
+    "titulo": "Directional and confirmation",
+    "propuesta": "Destination, arrow and measured distance, before each decision and repeated after it.",
+    "problema": "Where: before forks, turns and transfers, and again afterwards."
    },
    "pt": {
-    "titulo": "Mapa “você está aqui” com raios a pé",
-    "propuesta": "Em cada estação, um mapa com os hotéis a 5 e 10 minutos a pé e a saída mais conveniente.",
-    "problema": "Diagnóstico 3.3: a hospedagem é dispersa e muitos visitantes ficaram fora da cidade; também se relatou que a estação Joe Arroyo precisa de melhor sinalização de rotas e áreas de espera."
+    "titulo": "Direcional e confirmação",
+    "propuesta": "Destino, seta e distância medida, antes de cada decisão e repetida depois.",
+    "problema": "Onde: antes de bifurcações, curvas e baldeações, e de novo depois."
    }
   },
   {
    "es": {
-    "titulo": "Ruta de partido señalizada",
-    "propuesta": "Flechas de piso y señales de flujo desde Pedro Ramayá y Joaquín Barrios Polo hasta los anillos de seguridad del Metropolitano, con horarios de regreso.",
-    "problema": "Diagnóstico 3.2 y 3.5: cierres de calles y cambios de rutas en día de partido; control de accesos con tres anillos."
+    "titulo": "Paradero y vehículo",
+    "propuesta": "Código BAQ complementario junto a la ruta oficial, horarios y sentido.",
+    "problema": "Dónde: paraderos y buses autorizados."
    },
    "en": {
-    "titulo": "Signed match-day route",
-    "propuesta": "Floor arrows and flow signs from Pedro Ramayá and Joaquín Barrios Polo to the Metropolitano security rings, with return times.",
-    "problema": "Diagnosis 3.2 and 3.5: street closures and route changes on match days; access control with three rings."
+    "titulo": "Stop and vehicle",
+    "propuesta": "Complementary BAQ code next to the official route, timetable and direction.",
+    "problema": "Where: authorised stops and buses."
    },
    "pt": {
-    "titulo": "Rota de dia de jogo sinalizada",
-    "propuesta": "Setas no chão e placas de fluxo desde Pedro Ramayá e Joaquín Barrios Polo até os anéis de segurança do Metropolitano, com horários de volta.",
-    "problema": "Diagnóstico 3.2 e 3.5: fechamento de ruas e mudanças de rotas em dia de jogo; controle de acesso com três anéis."
+    "titulo": "Parada e veículo",
+    "propuesta": "Código BAQ complementar junto à linha oficial, horários e sentido.",
+    "problema": "Onde: paradas e ônibus autorizados."
    }
   },
   {
    "es": {
-    "titulo": "Alertas de arroyo en el corredor",
-    "propuesta": "Avisos luminosos en las estaciones vecinas a cauces, como el cruce de la Av. Murillo con el Arroyo El Salado, conectados a la Baliza Quilla del proyecto.",
-    "problema": "Diagnóstico 3.2: un aguacero puede cortar accesos; el prototipo físico mide nivel de agua."
+    "titulo": "Retorno y servicios",
+    "propuesta": "Punto de recogida, regreso, BAQ Points cercanos y acceso peatonal.",
+    "problema": "Dónde: salidas del estadio y puntos turísticos."
    },
    "en": {
-    "titulo": "Flash-flood alerts along the corridor",
-    "propuesta": "Light signals at stations near streams, such as where Av. Murillo crosses the Arroyo El Salado, connected to the project's Baliza Quilla.",
-    "problema": "Diagnosis 3.2: a downpour can cut off access; the physical prototype measures water level."
+    "titulo": "Return and services",
+    "propuesta": "Pick-up point, way back, nearby BAQ Points and pedestrian access.",
+    "problema": "Where: stadium exits and tourist sites."
    },
    "pt": {
-    "titulo": "Alertas de enxurrada no corredor",
-    "propuesta": "Avisos luminosos nas estações perto de córregos, como o cruzamento da Av. Murillo com o Arroyo El Salado, conectados à Baliza Quilla do projeto.",
-    "problema": "Diagnóstico 3.2: um temporal pode cortar acessos; o protótipo físico mede o nível da água."
+    "titulo": "Retorno e serviços",
+    "propuesta": "Ponto de embarque, volta, BAQ Points próximos e acesso de pedestres.",
+    "problema": "Onde: saídas do estádio e pontos turísticos."
    }
   },
   {
    "es": {
-    "titulo": "Puntos de hidratación y sombra señalizados",
-    "propuesta": "Pictogramas universales de agua, sombra y primeros auxilios en estaciones y recorridos peatonales al estadio.",
-    "problema": "Diagnóstico 3.4: calor de 32 °C, humedad cercana al 80% y alerta en la red hospitalaria."
+    "titulo": "Reglas de diseño",
+    "propuesta": "Texto ES/EN, pictogramas, código visible y alto contraste; B03 con texto oscuro. El color no indica congestión. No pintar calzadas ni cubrir señales oficiales.",
+    "problema": "Exteriores: evaluar aluminio compuesto, soporte galvanizado y vinilo UV. En el MVP: papel o cartulina."
    },
    "en": {
-    "titulo": "Signed hydration and shade points",
-    "propuesta": "Universal pictograms for water, shade and first aid at stations and on walking routes to the stadium.",
-    "problema": "Diagnosis 3.4: 32 °C heat, humidity near 80% and an alert in the hospital network."
+    "titulo": "Design rules",
+    "propuesta": "ES/EN text, pictograms, visible code and high contrast; B03 with dark text. Colour does not indicate congestion. No painting roads or covering official signs.",
+    "problema": "Outdoors: assess composite aluminium, galvanised posts and UV vinyl. In the MVP: paper or card."
    },
    "pt": {
-    "titulo": "Pontos de hidratação e sombra sinalizados",
-    "propuesta": "Pictogramas universais de água, sombra e primeiros socorros em estações e caminhos a pé até o estádio.",
-    "problema": "Diagnóstico 3.4: calor de 32 °C, umidade perto de 80% e alerta na rede hospitalar."
+    "titulo": "Regras de desenho",
+    "propuesta": "Texto ES/EN, pictogramas, código visível e alto contraste; B03 com texto escuro. A cor não indica congestionamento. Não pintar vias nem cobrir a sinalização oficial.",
+    "problema": "Exteriores: avaliar alumínio composto, suporte galvanizado e vinil UV. No MVP: papel ou cartolina."
    }
   },
   {
    "es": {
-    "titulo": "Tarifa y medio de pago en tres idiomas",
-    "propuesta": "Explicar en taquilla y torniquetes que solo se paga con tarjeta, el costo del pasaje y dónde recargar.",
-    "problema": "El pago es solo con tarjeta inteligente; un visitante sin efectivo útil ni tarjeta queda bloqueado en la entrada."
+    "titulo": "Qué se construye en el Sprint 2",
+    "propuesta": "1 directorio, 3 direccionales o confirmaciones, 1 mapa de transferencia, 1 señal de retorno y 1 identificador de Point.",
+    "problema": "Se levanta ubicación exacta, foto, orientación y accesibilidad en un inventario; no se instala en la calle sin autorización."
    },
    "en": {
-    "titulo": "Fares and payment in three languages",
-    "propuesta": "Explain at ticket offices and turnstiles that payment is card-only, the fare and where to top up.",
-    "problema": "Payment is by smart card only; a visitor without a card is stuck at the entrance."
+    "titulo": "What is built in Sprint 2",
+    "propuesta": "1 directory, 3 directionals or confirmations, 1 transfer map, 1 return sign and 1 Point identifier.",
+    "problema": "Exact location, photo, orientation and accessibility are logged in an inventory; nothing is installed on the street without authorisation."
    },
    "pt": {
-    "titulo": "Tarifa e forma de pagamento em três idiomas",
-    "propuesta": "Explicar na bilheteria e nas catracas que só se paga com cartão, o preço da passagem e onde recarregar.",
-    "problema": "O pagamento é só com cartão inteligente; um visitante sem cartão fica bloqueado na entrada."
-   }
-  },
-  {
-   "es": {
-    "titulo": "Señalización de respaldo ante apagón",
-    "propuesta": "Señales fotoluminiscentes y pantallas con batería para que la información siga visible sin energía.",
-    "problema": "Diagnóstico, eje 3 (resiliencia): cortes de energía en Barranquilla y riesgo financiero del operador eléctrico."
-   },
-   "en": {
-    "titulo": "Backup signage during blackouts",
-    "propuesta": "Photoluminescent signs and battery-powered screens so information stays visible without power.",
-    "problema": "Diagnosis, axis 3 (resilience): power cuts in Barranquilla and the financial risk of the electricity operator."
-   },
-   "pt": {
-    "titulo": "Sinalização de reserva em apagões",
-    "propuesta": "Placas fotoluminescentes e telas com bateria para que a informação continue visível sem energia.",
-    "problema": "Diagnóstico, eixo 3 (resiliência): cortes de energia em Barranquilla e risco financeiro da operadora elétrica."
+    "titulo": "O que se constrói no Sprint 2",
+    "propuesta": "1 diretório, 3 direcionais ou confirmações, 1 mapa de transferência, 1 placa de retorno e 1 identificador de Point.",
+    "problema": "Localização exata, foto, orientação e acessibilidade são registradas num inventário; nada é instalado na rua sem autorização."
    }
   }
  ]

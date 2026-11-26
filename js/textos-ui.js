@@ -25,7 +25,7 @@ const OSM =
 export const TEXTOS_UI = {
   es: {
     titulo: 'Barranquilla 360: una ciudad que se explica a sí misma',
-    intro: 'Programa de preparación urbana para grandes eventos: distribuir la movilidad, atender a quien llega y gestionar la capacidad. Aprovechar antes de construir, medir antes de invertir.',
+    intro: 'Prepara a Barranquilla para recibir grandes eventos sin deteriorar la operación cotidiana: combina capacidad real de transporte, servicios físicos de proximidad y gestión de recursos con datos verificables. El legado sirve también al Carnaval, partidos, conciertos y congresos.',
     idioma: 'Idioma',
     navDesafio: 'Desafío',
     navPropuesta: 'Propuesta',
@@ -57,7 +57,7 @@ export const TEXTOS_UI = {
     puntoTarjeta: 'Comprar / recargar tarjeta',
     passEtiqueta: 'BAQ PASS · PROPUESTA',
     passTitulo: '¿Dónde encuentro mi BAQ Pass?',
-    passLead: 'Recógelo ya precargado en tiendas verificadas y llega listo para viajar en Transmetro, sin buscar taquilla ni llevar efectivo.',
+    passLead: 'Facilitar el uso del transporte: distribuir las tarjetas de Transmetro existentes en puntos autorizados, con instrucciones bilingües, precio visible, recarga y validación normal.',
     passP1T: 'Encuéntrala',
     passP1: 'Ubica en el mapa la tienda verificada más cercana a tu llegada o a tu hotel.',
     passP2T: 'Verifica',
@@ -72,7 +72,7 @@ export const TEXTOS_UI = {
     passL3T: 'En el barrio',
     passL3: 'Comercios locales verificados en el Centro, Barrio Abajo, el Malecón y la costa.',
     passHoy: 'Hoy ya puedes comprar y recargar en la taquilla del Portal de Soledad, en el Punto de Atención al Cliente de Joe Arroyo y en puntos SuperGIROS.',
-    passAviso: 'Propuesta BAQ360 por validar con Transmetro y el Área Metropolitana. Los puntos son candidatos y la adhesión comercial es voluntaria.',
+    passAviso: 'No es una tarjeta financiera nueva ni sustituye los medios de pago vigentes. En el prototipo es una tarjeta conceptual con su guía de uso; la distribución real necesita acuerdo con Transmetro. Los puntos son candidatos y la adhesión comercial es voluntaria.',
     sinTarjeta: 'Sin punto de tarjeta más adelante',
     lgTarjeta: 'Punto de tarjeta',
     tarjetaPropuesta: 'propuesto',
@@ -112,7 +112,7 @@ export const TEXTOS_UI = {
     rotar: 'Rotar idiomas',
     notaLetrero:
       'El letrero cambia con la posición del bus: muestra la próxima estación, qué hotel o atractivo queda cerca y cuánto se camina.',
-    mejorasTitulo: 'Mejoras de señalización según las problemáticas del diagnóstico',
+    mejorasTitulo: 'Señalización BAQ Routes: qué piezas se instalan y dónde',
     fuentesTitulo: 'Datos y fuentes',
     fuentes: [
       `Trazado, estaciones, calles y hoteles: OpenStreetMap, relaciones ${OSM}, consultadas el 26 de noviembre de 2026. Los hoteles son los registrados en OSM a menos de 600 m del corredor; conviene confirmar que sigan operando antes de una demostración.`,
@@ -159,7 +159,7 @@ export const TEXTOS_UI = {
 
   en: {
     titulo: 'Barranquilla 360: a city that explains itself',
-    intro: 'Urban preparedness programme for major events: distribute mobility, assist arriving visitors and manage capacity. Use what exists before building, measure before investing.',
+    intro: 'Prepares Barranquilla to host major events without degrading everyday operations: it combines real transport capacity, physical services nearby and resource management based on verifiable data. The legacy also serves Carnival, matches, concerts and conferences.',
     idioma: 'Language',
     navDesafio: 'Challenge',
     navPropuesta: 'Proposal',
@@ -191,7 +191,7 @@ export const TEXTOS_UI = {
     puntoTarjeta: 'Buy / top up card',
     passEtiqueta: 'BAQ PASS · PROPOSAL',
     passTitulo: 'Where can I get my BAQ Pass?',
-    passLead: 'Pick it up already loaded at verified shops and arrive ready to ride Transmetro, with no hunting for a ticket office or carrying cash.',
+    passLead: 'Making transport easier to use: distribute existing Transmetro cards at authorised points, with bilingual instructions, a visible price, top-ups and normal validation.',
     passP1T: 'Find it',
     passP1: 'Spot the verified shop closest to your arrival point or your hotel on the map.',
     passP2T: 'Check it',
@@ -206,7 +206,7 @@ export const TEXTOS_UI = {
     passL3T: 'In the neighbourhood',
     passL3: 'Verified local shops in the Centro, Barrio Abajo, the Malecón and the coast.',
     passHoy: 'Today you can already buy and top up at the Portal de Soledad ticket office, the Joe Arroyo Customer Service Point and SuperGIROS outlets.',
-    passAviso: 'BAQ360 proposal, to be validated with Transmetro and the Metropolitan Area. Points are candidates and business participation is voluntary.',
+    passAviso: 'It is not a new financial card and it does not replace current payment methods. In the prototype it is a concept card with a user guide; real distribution needs an agreement with Transmetro. Points are candidates and business participation is voluntary.',
     sinTarjeta: 'No card point ahead',
     lgTarjeta: 'Card point',
     tarjetaPropuesta: 'proposed',
@@ -246,7 +246,7 @@ export const TEXTOS_UI = {
     rotar: 'Rotate languages',
     notaLetrero:
       'The sign changes with the bus position: it shows the next station, which hotel or attraction is nearby and how far it is to walk.',
-    mejorasTitulo: 'Wayfinding improvements based on the diagnosis',
+    mejorasTitulo: 'BAQ Routes signage: which pieces go where',
     fuentesTitulo: 'Data and sources',
     fuentes: [
       `Route layout, stations, streets and hotels: OpenStreetMap, relations ${OSM}, accessed 26 November 2026. Hotels are those registered in OSM within 600 m of the corridor; confirm they are still open before a demo.`,
@@ -293,7 +293,7 @@ export const TEXTOS_UI = {
 
   pt: {
     titulo: 'Barranquilla 360: uma cidade que se explica sozinha',
-    intro: 'Programa de preparação urbana para grandes eventos: distribuir a mobilidade, atender quem chega e gerir a capacidade. Aproveitar antes de construir, medir antes de investir.',
+    intro: 'Prepara Barranquilla para receber grandes eventos sem prejudicar a operação cotidiana: combina capacidade real de transporte, serviços físicos de proximidade e gestão de recursos com dados verificáveis. O legado também serve ao Carnaval, jogos, shows e congressos.',
     idioma: 'Idioma',
     navDesafio: 'Desafio',
     navPropuesta: 'Proposta',
@@ -325,7 +325,7 @@ export const TEXTOS_UI = {
     puntoTarjeta: 'Comprar / recarregar cartão',
     passEtiqueta: 'BAQ PASS · PROPOSTA',
     passTitulo: 'Onde encontro meu BAQ Pass?',
-    passLead: 'Retire-o já carregado em lojas verificadas e chegue pronto para viajar de Transmetro, sem procurar bilheteria nem levar dinheiro.',
+    passLead: 'Facilitar o uso do transporte: distribuir os cartões do Transmetro já existentes em pontos autorizados, com instruções bilíngues, preço visível, recarga e validação normal.',
     passP1T: 'Encontre',
     passP1: 'Veja no mapa a loja verificada mais próxima da sua chegada ou do seu hotel.',
     passP2T: 'Confira',
@@ -340,7 +340,7 @@ export const TEXTOS_UI = {
     passL3T: 'No bairro',
     passL3: 'Comércios locais verificados no Centro, Barrio Abajo, Malecón e litoral.',
     passHoy: 'Hoje já é possível comprar e recarregar na bilheteria do Portal de Soledad, no Ponto de Atendimento ao Cliente de Joe Arroyo e em pontos SuperGIROS.',
-    passAviso: 'Proposta BAQ360 a validar com o Transmetro e a Área Metropolitana. Os pontos são candidatos e a adesão comercial é voluntária.',
+    passAviso: 'Não é um novo cartão financeiro nem substitui os meios de pagamento vigentes. No protótipo é um cartão conceitual com guia de uso; a distribuição real precisa de acordo com o Transmetro. Os pontos são candidatos e a adesão comercial é voluntária.',
     sinTarjeta: 'Sem ponto de cartão adiante',
     lgTarjeta: 'Ponto de cartão',
     tarjetaPropuesta: 'proposto',
@@ -380,7 +380,7 @@ export const TEXTOS_UI = {
     rotar: 'Alternar idiomas',
     notaLetrero:
       'A placa muda com a posição do ônibus: mostra a próxima estação, qual hotel ou atração fica perto e quanto se caminha.',
-    mejorasTitulo: 'Melhorias de sinalização segundo os problemas do diagnóstico',
+    mejorasTitulo: 'Sinalização BAQ Routes: quais peças são instaladas e onde',
     fuentesTitulo: 'Dados e fontes',
     fuentes: [
       `Traçado, estações, ruas e hotéis: OpenStreetMap, relações ${OSM}, consultadas em 26 de novembro de 2026. Os hotéis são os registrados no OSM a menos de 600 m do corredor; convém confirmar que continuam funcionando antes de uma demonstração.`,

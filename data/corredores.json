@@ -1,5 +1,5 @@
 {
-  "_fuente": "Diapositiva 6 de Barranquilla 360 · Sprint 2 (cinco corredores con identidad común). Color + código + destino + pictograma; el color no sustituye señales oficiales.",
+  "_fuente": "Documento «Barranquilla 360 · Sprint 2 · Plan operativo y prototipo», sección 05 (señalización y despliegue). Color + código + destino + pictograma; el color no sustituye señales oficiales.",
   "corredores": [
     {
       "codigo": "B01",
@@ -9,7 +9,7 @@
         "es": "AEROPUERTO",
         "en": "AIRPORT"
       },
-      "vias": "Calle 30 · Portal de Soledad"
+      "vias": "Llegadas · Calle 30 · Portal de Soledad"
     },
     {
       "codigo": "B02",
@@ -19,7 +19,7 @@
         "es": "ESTADIO",
         "en": "STADIUM"
       },
-      "vias": "Murillo · Circunvalar"
+      "vias": "Murillo · accesos al Metro y retorno · Circunvalar"
     },
     {
       "codigo": "B03",
@@ -29,7 +29,7 @@
         "es": "CULTURA",
         "en": "CULTURE"
       },
-      "vias": "Centro · Barrio Abajo · Malecón"
+      "vias": "Centro · Barrio Abajo · Cra. 46/53 · Malecón"
     },
     {
       "codigo": "B04",
@@ -49,7 +49,7 @@
         "es": "REGIÓN",
         "en": "REGION"
       },
-      "vias": "Prosperidad · Cordialidad · Troncal"
+      "vias": "Prosperidad · Cordialidad · Troncal Caribe · terminales"
     }
   ]
 }

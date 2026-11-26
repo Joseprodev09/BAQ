@@ -651,6 +651,11 @@ select {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid var(--line2);
 }
+@media (min-width: 981px) {
+  .p-pasos.p-cinco {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
 .p-pasos li {
   display: grid;
   gap: 8px;
@@ -1288,6 +1293,15 @@ input[type='range'] {
   font-weight: 500;
   font-size: clamp(17px, 1.8vw, 21px);
   max-width: 50ch;
+}
+.p-cierre .p-etapas {
+  border-top-color: rgb(255 255 255 / 0.2);
+}
+.p-cierre .p-etapas li + li {
+  border-left-color: rgb(255 255 255 / 0.15);
+}
+.p-cierre .p-etapas p {
+  color: #c9d4df;
 }
 .p-cierre .p-nota {
   margin: 12px 0 0;
