@@ -130,6 +130,8 @@ transmetro-sim/
 
 No hay dependencias que instalar: `npm start` y `npm run deploy` descargan lo necesario la primera vez.
 
+`npm run rutas` recalcula el trazado de las rutas propuestas (ver docs/DATOS.md).
+
 ## Más documentación
 
 - [docs/DATOS.md](docs/DATOS.md): de dónde salen los datos, qué es real y qué es supuesto, y cómo editarlos.
@@ -141,3 +143,4 @@ No hay dependencias que instalar: `npm start` y `npm run deploy` descargan lo ne
 - Trazados, estaciones, calles y hoteles: © colaboradores de [OpenStreetMap](https://www.openstreetmap.org/copyright), licencia ODbL. Consultados el 26 de noviembre de 2026.
 - La velocidad del bus y los tiempos de parada son **supuestos del simulador**, no datos de Transmetro.
 "# BAQ" 
+# BAQ360
