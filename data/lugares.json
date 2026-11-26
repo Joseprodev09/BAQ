@@ -31,6 +31,30 @@
    "lat": 10.91968,
    "lon": -74.7991,
    "tipo": "arroyo"
+  },
+  {
+   "nombre": "Aeropuerto Ernesto Cortissoz",
+   "lat": 10.88689,
+   "lon": -74.77679,
+   "tipo": "lugar"
+  },
+  {
+   "nombre": "Gran Malecón del Río",
+   "lat": 11.01578,
+   "lon": -74.789,
+   "tipo": "lugar"
+  },
+  {
+   "nombre": "Ventana al Mundo",
+   "lat": 11.03316,
+   "lon": -74.83143,
+   "tipo": "lugar"
+  },
+  {
+   "nombre": "Muelle de Puerto Colombia",
+   "lat": 10.98958,
+   "lon": -74.95888,
+   "tipo": "lugar"
   }
  ]
 }

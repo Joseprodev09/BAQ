@@ -1,7 +1,7 @@
 {
  "fuente": "OpenStreetMap (© colaboradores de OpenStreetMap, licencia ODbL)",
  "consultado": "2026-11-26",
- "nota": "trazado: puntos del recorrido en orden; via = avenida por la que va el bus; cruce = calle o carrera que cruza en ese punto.",
+ "nota": "trazado: puntos del recorrido en orden; via = avenida por la que va el bus; cruce = calle o carrera que cruza en ese punto. Rutas con \"tipo\": \"propuesta\": trazado aproximado calculado sobre calles reales (OpenStreetMap + OSRM); no son rutas oficiales.",
  "rutas": [
   {
    "id": "R1",
@@ -681,7 +681,8 @@
      "via": "Calle 74",
      "cruce": "Carrera 45"
     }
-   ]
+   ],
+   "tipo": "actual"
   },
   {
    "id": "B1",
@@ -1305,7 +1306,3574 @@
      "via": "Avenida Carrera 46",
      "cruce": "Avenida Calle 30"
     }
-   ]
+   ],
+   "tipo": "actual"
+  },
+  {
+   "id": "B01-A",
+   "tipo": "propuesta",
+   "nombre": "B01-A · Aeropuerto → Portal de Soledad (exprés)",
+   "destino": "Portal de Soledad",
+   "color": "#1565C0",
+   "seBasaEn": {
+    "es": "Alimentadoras de Transmetro en Soledad que llegan al Portal de Soledad por la Carrera 14 y la Calle 54 (como la A3-2 Soledad 2000) y buses que ya llegan al aeropuerto por la Vía Aeropuerto.",
+    "en": "Transmetro feeder routes in Soledad that reach Portal de Soledad along Carrera 14 and Calle 54 (such as A3-2 Soledad 2000) and buses that already serve the airport along Vía Aeropuerto.",
+    "pt": "Alimentadoras do Transmetro em Soledad que chegam ao Portal de Soledad pela Carrera 14 e a Calle 54 (como a A3-2 Soledad 2000) e ônibus que já chegam ao aeroporto pela Vía Aeropuerto."
+   },
+   "opera": {
+    "es": "Transmetro (alimentador exprés), con la misma tarjeta.",
+    "en": "Transmetro (express feeder), same card.",
+    "pt": "Transmetro (alimentador expresso), com o mesmo cartão."
+   },
+   "cuando": {
+    "es": "Todos los días; refuerzo en horas de llegada de vuelos y días de partido.",
+    "en": "Every day; extra buses at flight arrival peaks and on match days.",
+    "pt": "Todos os dias; reforço nos horários de chegada de voos e em dias de jogo."
+   },
+   "estaciones": [
+    "aer",
+    "ccc",
+    "hp-b01-a-1",
+    "ps"
+   ],
+   "trazado": [
+    {
+     "lat": 10.88635,
+     "lon": -74.77613,
+     "via": "Salidas",
+     "cruce": "Llegadas"
+    },
+    {
+     "lat": 10.88581,
+     "lon": -74.77638,
+     "via": "Salidas",
+     "cruce": "Llegadas"
+    },
+    {
+     "lat": 10.88522,
+     "lon": -74.77599,
+     "via": "Salidas",
+     "cruce": "Vía Aeropuerto"
+    },
+    {
+     "lat": 10.885,
+     "lon": -74.77574,
+     "via": "Vía Aeropuerto",
+     "cruce": "Salidas"
+    },
+    {
+     "lat": 10.8857,
+     "lon": -74.77479,
+     "via": "Vía Aeropuerto",
+     "cruce": "Llegadas"
+    },
+    {
+     "lat": 10.88601,
+     "lon": -74.77425,
+     "via": "Vía Aeropuerto",
+     "cruce": "Salidas"
+    },
+    {
+     "lat": 10.88635,
+     "lon": -74.77238,
+     "via": "Vía Aeropuerto",
+     "cruce": null
+    },
+    {
+     "lat": 10.88632,
+     "lon": -74.7714,
+     "via": "Vía Aeropuerto",
+     "cruce": null
+    },
+    {
+     "lat": 10.88551,
+     "lon": -74.77007,
+     "via": "Vía Aeropuerto",
+     "cruce": "Avenida Boyacá"
+    },
+    {
+     "lat": 10.88554,
+     "lon": -74.76958,
+     "via": "Avenida Boyacá",
+     "cruce": "Vía Aeropuerto"
+    },
+    {
+     "lat": 10.8879,
+     "lon": -74.7699,
+     "via": "Avenida Boyacá",
+     "cruce": "Carrera 40"
+    },
+    {
+     "lat": 10.8917,
+     "lon": -74.7697,
+     "via": "Avenida Boyacá",
+     "cruce": "Calle 19"
+    },
+    {
+     "lat": 10.8951,
+     "lon": -74.7694,
+     "via": "Avenida Boyacá",
+     "cruce": null
+    },
+    {
+     "lat": 10.8971,
+     "lon": -74.7693,
+     "via": "Avenida Boyacá",
+     "cruce": "Calle 19 - Aeropuerto de Carga"
+    },
+    {
+     "lat": 10.8997,
+     "lon": -74.7692,
+     "via": "Avenida Boyacá",
+     "cruce": "Calle 11"
+    },
+    {
+     "lat": 10.9011,
+     "lon": -74.7692,
+     "via": "Avenida Boyacá",
+     "cruce": "Salida a Autopista Aeropuerto"
+    },
+    {
+     "lat": 10.9024,
+     "lon": -74.7693,
+     "via": "Avenida Boyacá",
+     "cruce": "Avenida El Platanal"
+    },
+    {
+     "lat": 10.90266,
+     "lon": -74.76963,
+     "via": "Avenida El Platanal",
+     "cruce": "Salida a Autopista Aeropuerto"
+    },
+    {
+     "lat": 10.9026,
+     "lon": -74.7698,
+     "via": "Avenida El Platanal",
+     "cruce": "Salida a Autopista Aeropuerto"
+    },
+    {
+     "lat": 10.9029,
+     "lon": -74.7714,
+     "via": "Avenida El Platanal",
+     "cruce": "Salida a Autopista Aeropuerto"
+    },
+    {
+     "lat": 10.9037,
+     "lon": -74.7724,
+     "via": "Avenida El Platanal",
+     "cruce": "Avenida el Platanal"
+    },
+    {
+     "lat": 10.9053,
+     "lon": -74.7738,
+     "via": "Avenida El Platanal",
+     "cruce": "Calle 35"
+    },
+    {
+     "lat": 10.90573,
+     "lon": -74.7741,
+     "via": "Avenida El Platanal",
+     "cruce": "Calle 36A"
+    },
+    {
+     "lat": 10.90581,
+     "lon": -74.77436,
+     "via": "Avenida El Platanal",
+     "cruce": "Calle 36A"
+    },
+    {
+     "lat": 10.90566,
+     "lon": -74.77441,
+     "via": "Avenida El Platanal",
+     "cruce": "Calle 36A"
+    },
+    {
+     "lat": 10.90494,
+     "lon": -74.77599,
+     "via": "Calle 37",
+     "cruce": "Carrera 11B"
+    },
+    {
+     "lat": 10.90494,
+     "lon": -74.7762,
+     "via": "Calle 37",
+     "cruce": "Carrera 11B"
+    },
+    {
+     "lat": 10.9045,
+     "lon": -74.77643,
+     "via": "Carrera 11",
+     "cruce": "Calle 37"
+    },
+    {
+     "lat": 10.90446,
+     "lon": -74.77665,
+     "via": "Carrera 11",
+     "cruce": "Calle 37"
+    },
+    {
+     "lat": 10.905,
+     "lon": -74.77802,
+     "via": "Calle 39",
+     "cruce": "Carrera 11"
+    },
+    {
+     "lat": 10.90594,
+     "lon": -74.78092,
+     "via": "Carrera 11",
+     "cruce": "Calle 43A"
+    },
+    {
+     "lat": 10.9066,
+     "lon": -74.78126,
+     "via": "Calle 44",
+     "cruce": "Carrera 11A"
+    },
+    {
+     "lat": 10.9068,
+     "lon": -74.78143,
+     "via": "Calle 44",
+     "cruce": "Carrera 11A"
+    },
+    {
+     "lat": 10.90884,
+     "lon": -74.78185,
+     "via": "Calle 44",
+     "cruce": "Carrera 13A"
+    },
+    {
+     "lat": 10.90916,
+     "lon": -74.78186,
+     "via": "Calle 44",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.9088,
+     "lon": -74.7833,
+     "via": "Carrera 14",
+     "cruce": "Calle 45B"
+    },
+    {
+     "lat": 10.9084,
+     "lon": -74.7844,
+     "via": "Carrera 14",
+     "cruce": "Calle 46C"
+    },
+    {
+     "lat": 10.9084,
+     "lon": -74.7857,
+     "via": "Carrera 14",
+     "cruce": "Calle 48"
+    },
+    {
+     "lat": 10.9087,
+     "lon": -74.7869,
+     "via": "Calle 49",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.9087,
+     "lon": -74.7884,
+     "via": "Carrera 14",
+     "cruce": "Calle 50A"
+    },
+    {
+     "lat": 10.9074,
+     "lon": -74.7905,
+     "via": "Transversal 13B",
+     "cruce": "Carrera 13B"
+    },
+    {
+     "lat": 10.9068,
+     "lon": -74.79127,
+     "via": "Transversal 13B",
+     "cruce": "Calle 53A"
+    },
+    {
+     "lat": 10.90683,
+     "lon": -74.7915,
+     "via": "Transversal 13B",
+     "cruce": "Calle 53A"
+    },
+    {
+     "lat": 10.90737,
+     "lon": -74.7919,
+     "via": "Calle 54",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.9074,
+     "lon": -74.7921,
+     "via": "Calle 54",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.9085,
+     "lon": -74.7933,
+     "via": "Calle 54",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.9089,
+     "lon": -74.7958,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9093,
+     "lon": -74.799,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.90825,
+     "lon": -74.79915,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13D"
+    },
+    {
+     "lat": 10.9081,
+     "lon": -74.7994,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13D"
+    },
+    {
+     "lat": 10.90765,
+     "lon": -74.7997,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13D"
+    },
+    {
+     "lat": 10.9076,
+     "lon": -74.79993,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13D"
+    },
+    {
+     "lat": 10.90745,
+     "lon": -74.80004,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13D"
+    }
+   ],
+   "pasaPor": [
+    "aer",
+    "ccc",
+    "ps"
+   ],
+   "paradasHotel": true,
+   "corredor": "B01"
+  },
+  {
+   "id": "B01-N",
+   "tipo": "propuesta",
+   "nombre": "B01-N · Aeropuerto → Norte hotelero (Buenavista)",
+   "destino": "C. C. Buenavista",
+   "color": "#1565C0",
+   "seBasaEn": {
+    "es": "La ruta B17 (Alianza Sodis y Coolitoral) ya une el aeropuerto con el C. C. Buenavista. La propuesta sigue la Calle 30 y la Carrera 46 y se detiene en Joe Arroyo, donde se personaliza la tarjeta.",
+    "en": "Route B17 (Alianza Sodis and Coolitoral) already links the airport with C. C. Buenavista. The proposal follows Calle 30 and Carrera 46 and stops at Joe Arroyo, where the card is personalised.",
+    "pt": "A rota B17 (Alianza Sodis e Coolitoral) já liga o aeroporto ao C. C. Buenavista. A proposta segue a Calle 30 e a Carrera 46 e para em Joe Arroyo, onde o cartão é personalizado."
+   },
+   "opera": {
+    "es": "Operadores urbanos del AMB (Alianza Sodis / Coolitoral) en convenio con Transmetro.",
+    "en": "AMB city bus operators (Alianza Sodis / Coolitoral) in partnership with Transmetro.",
+    "pt": "Operadores urbanos da AMB (Alianza Sodis / Coolitoral) em convênio com o Transmetro."
+   },
+   "cuando": {
+    "es": "Todos los días, de 5:00 a 23:00, cada 20 minutos (propuesto).",
+    "en": "Every day, 5:00–23:00, every 20 minutes (proposed).",
+    "pt": "Todos os dias, 5h–23h, a cada 20 minutos (proposto)."
+   },
+   "estaciones": [
+    "aer",
+    "hp-b01-n-1",
+    "hp-b01-n-2",
+    "hp-b01-n-3",
+    "ja",
+    "hp-b01-n-4",
+    "zhp",
+    "hp-b01-n-5",
+    "bv"
+   ],
+   "trazado": [
+    {
+     "lat": 10.88635,
+     "lon": -74.77613,
+     "via": "Salidas",
+     "cruce": "Llegadas"
+    },
+    {
+     "lat": 10.88581,
+     "lon": -74.77638,
+     "via": "Salidas",
+     "cruce": "Llegadas"
+    },
+    {
+     "lat": 10.88522,
+     "lon": -74.77599,
+     "via": "Salidas",
+     "cruce": "Vía Aeropuerto"
+    },
+    {
+     "lat": 10.885,
+     "lon": -74.77574,
+     "via": "Vía Aeropuerto",
+     "cruce": "Salidas"
+    },
+    {
+     "lat": 10.8857,
+     "lon": -74.77479,
+     "via": "Vía Aeropuerto",
+     "cruce": "Llegadas"
+    },
+    {
+     "lat": 10.88601,
+     "lon": -74.77425,
+     "via": "Vía Aeropuerto",
+     "cruce": "Salidas"
+    },
+    {
+     "lat": 10.88635,
+     "lon": -74.77238,
+     "via": "Vía Aeropuerto",
+     "cruce": null
+    },
+    {
+     "lat": 10.88632,
+     "lon": -74.7714,
+     "via": "Vía Aeropuerto",
+     "cruce": null
+    },
+    {
+     "lat": 10.88551,
+     "lon": -74.77007,
+     "via": "Vía Aeropuerto",
+     "cruce": "Avenida Boyacá"
+    },
+    {
+     "lat": 10.88554,
+     "lon": -74.76958,
+     "via": "Avenida Boyacá",
+     "cruce": "Vía Aeropuerto"
+    },
+    {
+     "lat": 10.8879,
+     "lon": -74.7699,
+     "via": "Avenida Boyacá",
+     "cruce": "Carrera 40"
+    },
+    {
+     "lat": 10.8917,
+     "lon": -74.7697,
+     "via": "Avenida Boyacá",
+     "cruce": "Calle 19"
+    },
+    {
+     "lat": 10.8951,
+     "lon": -74.7694,
+     "via": "Avenida Boyacá",
+     "cruce": null
+    },
+    {
+     "lat": 10.8997,
+     "lon": -74.7692,
+     "via": "Avenida Boyacá",
+     "cruce": "Calle 11"
+    },
+    {
+     "lat": 10.9011,
+     "lon": -74.7692,
+     "via": "Avenida Boyacá",
+     "cruce": "Salida a Autopista Aeropuerto"
+    },
+    {
+     "lat": 10.90334,
+     "lon": -74.76939,
+     "via": "Avenida Boyacá",
+     "cruce": "Salida a Avenida El Platanal"
+    },
+    {
+     "lat": 10.9046,
+     "lon": -74.7697,
+     "via": "Avenida Boyacá",
+     "cruce": "Salida a Autopista Aeropuerto"
+    },
+    {
+     "lat": 10.9077,
+     "lon": -74.7709,
+     "via": "Avenida Boyacá",
+     "cruce": "Carrera 11"
+    },
+    {
+     "lat": 10.90865,
+     "lon": -74.77135,
+     "via": "Carrera 11",
+     "cruce": "Avenida Boyacá"
+    },
+    {
+     "lat": 10.9089,
+     "lon": -74.7714,
+     "via": "Carrera 11",
+     "cruce": "Avenida Boyacá"
+    },
+    {
+     "lat": 10.90912,
+     "lon": -74.77157,
+     "via": "Carrera 11",
+     "cruce": "Avenida Boyacá"
+    },
+    {
+     "lat": 10.9096,
+     "lon": -74.7718,
+     "via": "Avenida Boyacá",
+     "cruce": "Calle 23"
+    },
+    {
+     "lat": 10.9108,
+     "lon": -74.7722,
+     "via": "Avenida Boyacá",
+     "cruce": "Carrera 13"
+    },
+    {
+     "lat": 10.9135,
+     "lon": -74.7733,
+     "via": "Avenida Boyacá",
+     "cruce": "Carrera 15A"
+    },
+    {
+     "lat": 10.915,
+     "lon": -74.774,
+     "via": "Avenida Boyacá",
+     "cruce": "Carrera 15A"
+    },
+    {
+     "lat": 10.9194,
+     "lon": -74.7757,
+     "via": "Avenida Boyacá",
+     "cruce": "Carrera 22"
+    },
+    {
+     "lat": 10.9255,
+     "lon": -74.7782,
+     "via": "Avenida Boyacá",
+     "cruce": "Carrera 30"
+    },
+    {
+     "lat": 10.928,
+     "lon": -74.7793,
+     "via": "Avenida Boyacá",
+     "cruce": "Carrera 37"
+    },
+    {
+     "lat": 10.92894,
+     "lon": -74.77964,
+     "via": "Avenida Boyacá",
+     "cruce": "Tucan"
+    },
+    {
+     "lat": 10.9317,
+     "lon": -74.7804,
+     "via": "Avenida Boyacá",
+     "cruce": "Autopista Aeropuerto"
+    },
+    {
+     "lat": 10.9332,
+     "lon": -74.78025,
+     "via": "Avenida Boyacá",
+     "cruce": "Calle 34"
+    },
+    {
+     "lat": 10.93342,
+     "lon": -74.78041,
+     "via": "Avenida Boyacá",
+     "cruce": "Calle 34"
+    },
+    {
+     "lat": 10.93407,
+     "lon": -74.78062,
+     "via": "Avenida Boyacá",
+     "cruce": "Calle 34"
+    },
+    {
+     "lat": 10.9342,
+     "lon": -74.7808,
+     "via": "Avenida Boyacá",
+     "cruce": "Calle 34"
+    },
+    {
+     "lat": 10.93471,
+     "lon": -74.78071,
+     "via": "Avenida Calle 30",
+     "cruce": "Autopista Aeropuerto"
+    },
+    {
+     "lat": 10.93488,
+     "lon": -74.78089,
+     "via": "Avenida Calle 30",
+     "cruce": "Autopista Aeropuerto"
+    },
+    {
+     "lat": 10.93505,
+     "lon": -74.78092,
+     "via": "Avenida Calle 30",
+     "cruce": "Autopista Aeropuerto"
+    },
+    {
+     "lat": 10.9369,
+     "lon": -74.7819,
+     "via": "Carrera 2",
+     "cruce": "Avenida Calle 30"
+    },
+    {
+     "lat": 10.9384,
+     "lon": -74.7824,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 2"
+    },
+    {
+     "lat": 10.9448,
+     "lon": -74.7842,
+     "via": "Avenida Calle 30",
+     "cruce": null
+    },
+    {
+     "lat": 10.94606,
+     "lon": -74.78464,
+     "via": "Avenida Calle 30",
+     "cruce": "Diagonal 8"
+    },
+    {
+     "lat": 10.9482,
+     "lon": -74.7852,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 10.9501,
+     "lon": -74.7858,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 13B"
+    },
+    {
+     "lat": 10.9524,
+     "lon": -74.7864,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.954,
+     "lon": -74.7867,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 17"
+    },
+    {
+     "lat": 10.9556,
+     "lon": -74.7864,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 17"
+    },
+    {
+     "lat": 10.9568,
+     "lon": -74.786,
+     "via": "Carrera 20",
+     "cruce": "Avenida Calle 30"
+    },
+    {
+     "lat": 10.9623,
+     "lon": -74.784,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 23"
+    },
+    {
+     "lat": 10.96653,
+     "lon": -74.78227,
+     "via": "Carrera 28",
+     "cruce": "Avenida Calle 30"
+    },
+    {
+     "lat": 10.9718,
+     "lon": -74.7797,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 33"
+    },
+    {
+     "lat": 10.9738,
+     "lon": -74.7786,
+     "via": "Carrera 35",
+     "cruce": "Avenida Calle 30"
+    },
+    {
+     "lat": 10.9751,
+     "lon": -74.778,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 36"
+    },
+    {
+     "lat": 10.9779,
+     "lon": -74.7764,
+     "via": "Carrera 40",
+     "cruce": "Avenida Calle 30"
+    },
+    {
+     "lat": 10.9792,
+     "lon": -74.7758,
+     "via": "Carrera 40",
+     "cruce": "Avenida Calle 30"
+    },
+    {
+     "lat": 10.9813,
+     "lon": -74.7754,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 43"
+    },
+    {
+     "lat": 10.9826,
+     "lon": -74.7756,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 44"
+    },
+    {
+     "lat": 10.9844,
+     "lon": -74.7761,
+     "via": "Avenida Calle 30",
+     "cruce": "Carrera 45B"
+    },
+    {
+     "lat": 10.98566,
+     "lon": -74.77664,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 30"
+    },
+    {
+     "lat": 10.9858,
+     "lon": -74.7784,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 36"
+    },
+    {
+     "lat": 10.9861,
+     "lon": -74.7804,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 39"
+    },
+    {
+     "lat": 10.9864,
+     "lon": -74.7818,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 41"
+    },
+    {
+     "lat": 10.9872,
+     "lon": -74.7848,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 46"
+    },
+    {
+     "lat": 10.98755,
+     "lon": -74.78583,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 47"
+    },
+    {
+     "lat": 10.9877,
+     "lon": -74.7859,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 47"
+    },
+    {
+     "lat": 10.9879,
+     "lon": -74.7869,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 48"
+    },
+    {
+     "lat": 10.9883,
+     "lon": -74.7879,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 50"
+    },
+    {
+     "lat": 10.9892,
+     "lon": -74.791,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 54"
+    },
+    {
+     "lat": 10.9898,
+     "lon": -74.7935,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 57"
+    },
+    {
+     "lat": 10.9918,
+     "lon": -74.8006,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 67"
+    },
+    {
+     "lat": 10.9924,
+     "lon": -74.8019,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 69"
+    },
+    {
+     "lat": 10.9944,
+     "lon": -74.8056,
+     "via": "Avenida Calle 72",
+     "cruce": "Avenida Carrera 46"
+    },
+    {
+     "lat": 10.99453,
+     "lon": -74.80573,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.99452,
+     "lon": -74.80601,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.99481,
+     "lon": -74.80643,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99512,
+     "lon": -74.80704,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.9945,
+     "lon": -74.80775,
+     "via": "Calle 74",
+     "cruce": "Carrera 45"
+    },
+    {
+     "lat": 10.99512,
+     "lon": -74.80704,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99481,
+     "lon": -74.80643,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99452,
+     "lon": -74.80601,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.99453,
+     "lon": -74.80573,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.9953,
+     "lon": -74.8065,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99547,
+     "lon": -74.80744,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99564,
+     "lon": -74.80757,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99595,
+     "lon": -74.80842,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 75"
+    },
+    {
+     "lat": 10.99589,
+     "lon": -74.80862,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 75"
+    },
+    {
+     "lat": 10.99788,
+     "lon": -74.81214,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 79"
+    },
+    {
+     "lat": 10.9986,
+     "lon": -74.8132,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 80"
+    },
+    {
+     "lat": 10.9999,
+     "lon": -74.8156,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 81"
+    },
+    {
+     "lat": 11.00061,
+     "lon": -74.81674,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 82"
+    },
+    {
+     "lat": 11.00113,
+     "lon": -74.81785,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 82"
+    },
+    {
+     "lat": 11.00133,
+     "lon": -74.81847,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 82"
+    },
+    {
+     "lat": 11.00154,
+     "lon": -74.81859,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 84"
+    },
+    {
+     "lat": 11.0017,
+     "lon": -74.8189,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 84"
+    },
+    {
+     "lat": 11.0023,
+     "lon": -74.821,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 85"
+    },
+    {
+     "lat": 11.00293,
+     "lon": -74.82289,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 87"
+    },
+    {
+     "lat": 11.00283,
+     "lon": -74.82303,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 87"
+    },
+    {
+     "lat": 11.00353,
+     "lon": -74.82463,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 90"
+    },
+    {
+     "lat": 11.00371,
+     "lon": -74.82467,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 90"
+    },
+    {
+     "lat": 11.00477,
+     "lon": -74.82689,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 93"
+    },
+    {
+     "lat": 11.00901,
+     "lon": -74.8253,
+     "via": "Calle 93",
+     "cruce": "Carrera 51B"
+    },
+    {
+     "lat": 11.00959,
+     "lon": -74.82516,
+     "via": "Calle 94",
+     "cruce": "Carrera 51B"
+    },
+    {
+     "lat": 11.01114,
+     "lon": -74.82428,
+     "via": "Carrera 52B",
+     "cruce": "Calle 94"
+    },
+    {
+     "lat": 11.01137,
+     "lon": -74.82434,
+     "via": "Carrera 52B",
+     "cruce": "Calle 94"
+    },
+    {
+     "lat": 11.0118,
+     "lon": -74.82511,
+     "via": "Carrera 52B",
+     "cruce": "Calle 96"
+    },
+    {
+     "lat": 11.01268,
+     "lon": -74.82739,
+     "via": "Carrera 52B",
+     "cruce": "Calle 98"
+    },
+    {
+     "lat": 11.0121,
+     "lon": -74.82779,
+     "via": "Calle 98",
+     "cruce": "Carrera 52"
+    },
+    {
+     "lat": 11.01245,
+     "lon": -74.82867,
+     "via": "Calle 99",
+     "cruce": "Calle 98"
+    },
+    {
+     "lat": 11.01431,
+     "lon": -74.82747,
+     "via": "Calle 99",
+     "cruce": "Carrera 53"
+    },
+    {
+     "lat": 11.01449,
+     "lon": -74.82744,
+     "via": "Calle 99",
+     "cruce": "Carrera 53"
+    },
+    {
+     "lat": 11.01432,
+     "lon": -74.82716,
+     "via": "Calle 99",
+     "cruce": "Carrera 53"
+    }
+   ],
+   "pasaPor": [
+    "aer",
+    "ja",
+    "zhp",
+    "bv"
+   ],
+   "paradasHotel": true,
+   "corredor": "B01"
+  },
+  {
+   "id": "B02-T",
+   "tipo": "propuesta",
+   "nombre": "B02-T · Joe Arroyo → Joaquín Barrios Polo (troncal al estadio)",
+   "destino": "Joaquín Barrios Polo",
+   "color": "#C62828",
+   "seBasaEn": {
+    "es": "Troncal R1 de Transmetro (Av. Olaya Herrera y Av. Murillo) en sentido sur, solo con paradas principales. Transmetro ya programó servicios adicionales de la R1 después de partidos en el Metropolitano.",
+    "en": "Transmetro trunk route R1 (Av. Olaya Herrera and Av. Murillo) southbound, main stops only. Transmetro has already run extra R1 services after matches at the Metropolitano.",
+    "pt": "Troncal R1 do Transmetro (Av. Olaya Herrera e Av. Murillo) sentido sul, só paradas principais. O Transmetro já programou serviços extras da R1 após jogos no Metropolitano."
+   },
+   "opera": {
+    "es": "Transmetro, con buses articulados de la troncal.",
+    "en": "Transmetro, using trunk articulated buses.",
+    "pt": "Transmetro, com ônibus articulados da troncal."
+   },
+   "cuando": {
+    "es": "Días de partido: desde 3 horas antes hasta 2 horas después.",
+    "en": "Match days: from 3 hours before until 2 hours after.",
+    "pt": "Dias de jogo: de 3 horas antes até 2 horas depois."
+   },
+   "estaciones": [
+    "ja",
+    "ca",
+    "at",
+    "ba",
+    "jb"
+   ],
+   "trazado": [
+    {
+     "lat": 10.99421,
+     "lon": -74.80793,
+     "via": "Calle 74",
+     "cruce": "Carrera 45"
+    },
+    {
+     "lat": 10.9945,
+     "lon": -74.80775,
+     "via": "Calle 74",
+     "cruce": "Carrera 45"
+    },
+    {
+     "lat": 10.99512,
+     "lon": -74.80704,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99481,
+     "lon": -74.80643,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99452,
+     "lon": -74.80601,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.99425,
+     "lon": -74.80542,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.99295,
+     "lon": -74.80303,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 70"
+    },
+    {
+     "lat": 10.99233,
+     "lon": -74.80195,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 69"
+    },
+    {
+     "lat": 10.99194,
+     "lon": -74.80126,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 68"
+    },
+    {
+     "lat": 10.99175,
+     "lon": -74.80058,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 67"
+    },
+    {
+     "lat": 10.99137,
+     "lon": -74.79917,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 65"
+    },
+    {
+     "lat": 10.99117,
+     "lon": -74.79841,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 64"
+    },
+    {
+     "lat": 10.9908,
+     "lon": -74.79706,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 62"
+    },
+    {
+     "lat": 10.99038,
+     "lon": -74.79558,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 60"
+    },
+    {
+     "lat": 10.99019,
+     "lon": -74.79488,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 59"
+    },
+    {
+     "lat": 10.98931,
+     "lon": -74.79172,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 55"
+    },
+    {
+     "lat": 10.98912,
+     "lon": -74.79102,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 54"
+    },
+    {
+     "lat": 10.98867,
+     "lon": -74.78939,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 53"
+    },
+    {
+     "lat": 10.98836,
+     "lon": -74.78838,
+     "via": "Avenida Carrera 46",
+     "cruce": "Plaza de la Paz"
+    },
+    {
+     "lat": 10.98822,
+     "lon": -74.78795,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 50"
+    },
+    {
+     "lat": 10.98805,
+     "lon": -74.78739,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 48"
+    },
+    {
+     "lat": 10.98765,
+     "lon": -74.78596,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 47"
+    },
+    {
+     "lat": 10.98738,
+     "lon": -74.78498,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Murillo"
+    },
+    {
+     "lat": 10.98711,
+     "lon": -74.78491,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 46"
+    },
+    {
+     "lat": 10.98639,
+     "lon": -74.78515,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 45"
+    },
+    {
+     "lat": 10.98454,
+     "lon": -74.78569,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 44"
+    },
+    {
+     "lat": 10.98354,
+     "lon": -74.78596,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 43"
+    },
+    {
+     "lat": 10.98285,
+     "lon": -74.7862,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 43"
+    },
+    {
+     "lat": 10.98193,
+     "lon": -74.78645,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 42"
+    },
+    {
+     "lat": 10.9814,
+     "lon": -74.78659,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 41"
+    },
+    {
+     "lat": 10.98028,
+     "lon": -74.78688,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 39"
+    },
+    {
+     "lat": 10.97976,
+     "lon": -74.78705,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 38"
+    },
+    {
+     "lat": 10.97794,
+     "lon": -74.78758,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 36"
+    },
+    {
+     "lat": 10.97665,
+     "lon": -74.7879,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 35"
+    },
+    {
+     "lat": 10.975,
+     "lon": -74.78842,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 33"
+    },
+    {
+     "lat": 10.97398,
+     "lon": -74.78873,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 32"
+    },
+    {
+     "lat": 10.97319,
+     "lon": -74.78898,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 31"
+    },
+    {
+     "lat": 10.97188,
+     "lon": -74.78939,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 30"
+    },
+    {
+     "lat": 10.96944,
+     "lon": -74.79002,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 27"
+    },
+    {
+     "lat": 10.96802,
+     "lon": -74.79046,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 26"
+    },
+    {
+     "lat": 10.96741,
+     "lon": -74.79074,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 25"
+    },
+    {
+     "lat": 10.96638,
+     "lon": -74.79106,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 24"
+    },
+    {
+     "lat": 10.96597,
+     "lon": -74.79125,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 23B"
+    },
+    {
+     "lat": 10.96531,
+     "lon": -74.79153,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 23"
+    },
+    {
+     "lat": 10.96494,
+     "lon": -74.7917,
+     "via": "Avenida Murillo",
+     "cruce": "Avenida de La Cordialidad"
+    },
+    {
+     "lat": 10.96327,
+     "lon": -74.7925,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 21B"
+    },
+    {
+     "lat": 10.96221,
+     "lon": -74.793,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 21"
+    },
+    {
+     "lat": 10.96122,
+     "lon": -74.79333,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 21"
+    },
+    {
+     "lat": 10.96037,
+     "lon": -74.79373,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 20"
+    },
+    {
+     "lat": 10.95928,
+     "lon": -74.79432,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 20"
+    },
+    {
+     "lat": 10.95836,
+     "lon": -74.79476,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 19"
+    },
+    {
+     "lat": 10.95686,
+     "lon": -74.79549,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 18"
+    },
+    {
+     "lat": 10.95563,
+     "lon": -74.79606,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 17"
+    },
+    {
+     "lat": 10.95427,
+     "lon": -74.79668,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.95357,
+     "lon": -74.797,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13C"
+    },
+    {
+     "lat": 10.95301,
+     "lon": -74.79727,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 11"
+    },
+    {
+     "lat": 10.9523,
+     "lon": -74.7979,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10E"
+    },
+    {
+     "lat": 10.95164,
+     "lon": -74.79869,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10D"
+    },
+    {
+     "lat": 10.95114,
+     "lon": -74.79927,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10C"
+    },
+    {
+     "lat": 10.95088,
+     "lon": -74.79951,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 10.95029,
+     "lon": -74.7998,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 10.94995,
+     "lon": -74.79985,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 9F"
+    },
+    {
+     "lat": 10.94916,
+     "lon": -74.79985,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 9B"
+    },
+    {
+     "lat": 10.94861,
+     "lon": -74.79983,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8H"
+    },
+    {
+     "lat": 10.94832,
+     "lon": -74.7998,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8D"
+    },
+    {
+     "lat": 10.94768,
+     "lon": -74.79974,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8C"
+    },
+    {
+     "lat": 10.94729,
+     "lon": -74.7997,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8B"
+    },
+    {
+     "lat": 10.94669,
+     "lon": -74.79968,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8A"
+    },
+    {
+     "lat": 10.94606,
+     "lon": -74.79966,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8"
+    },
+    {
+     "lat": 10.94554,
+     "lon": -74.79965,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7H"
+    },
+    {
+     "lat": 10.94328,
+     "lon": -74.79958,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7D"
+    },
+    {
+     "lat": 10.94259,
+     "lon": -74.79959,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7C"
+    },
+    {
+     "lat": 10.94196,
+     "lon": -74.79954,
+     "via": "Avenida Murillo",
+     "cruce": "Calle 44B"
+    },
+    {
+     "lat": 10.9412,
+     "lon": -74.79949,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7"
+    },
+    {
+     "lat": 10.94046,
+     "lon": -74.79936,
+     "via": "Avenida Murillo",
+     "cruce": "Calle 44B"
+    },
+    {
+     "lat": 10.93987,
+     "lon": -74.79931,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 5B"
+    },
+    {
+     "lat": 10.93871,
+     "lon": -74.79921,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 4A"
+    },
+    {
+     "lat": 10.93821,
+     "lon": -74.79918,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 4"
+    },
+    {
+     "lat": 10.93745,
+     "lon": -74.79918,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 3C"
+    },
+    {
+     "lat": 10.93689,
+     "lon": -74.79917,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 3B"
+    },
+    {
+     "lat": 10.93406,
+     "lon": -74.79915,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 2B"
+    },
+    {
+     "lat": 10.9334,
+     "lon": -74.79915,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 2"
+    },
+    {
+     "lat": 10.9329,
+     "lon": -74.79914,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 1J"
+    }
+   ],
+   "corredor": "B02"
+  },
+  {
+   "id": "B02-N",
+   "tipo": "propuesta",
+   "nombre": "B02-N · Norte hotelero → Estadio Metropolitano",
+   "destino": "Estadio Metropolitano",
+   "color": "#C62828",
+   "seBasaEn": {
+    "es": "Rutas urbanas de Coolitoral, como Soledad 2.000, que recorren la Av. Circunvalar hacia Soledad y el aeropuerto. Esta propuesta usa la Circunvalar para no sobrecargar la troncal de la Av. Murillo en día de partido.",
+    "en": "Coolitoral city routes, such as Soledad 2.000, that run along Av. Circunvalar towards Soledad and the airport. This proposal uses the Circunvalar to avoid overloading the Av. Murillo trunk on match days.",
+    "pt": "Rotas urbanas da Coolitoral, como a Soledad 2.000, que percorrem a Av. Circunvalar rumo a Soledad e ao aeroporto. Esta proposta usa a Circunvalar para não sobrecarregar a troncal da Av. Murillo em dia de jogo."
+   },
+   "opera": {
+    "es": "Operadores urbanos del AMB (por ejemplo Coolitoral), coordinados por Transmetro.",
+    "en": "AMB city operators (for example Coolitoral), coordinated by Transmetro.",
+    "pt": "Operadores urbanos da AMB (por exemplo Coolitoral), coordenados pelo Transmetro."
+   },
+   "cuando": {
+    "es": "Días de partido y grandes eventos en el estadio.",
+    "en": "Match days and major stadium events.",
+    "pt": "Dias de jogo e grandes eventos no estádio."
+   },
+   "estaciones": [
+    "zhp",
+    "hp-b02-n-1",
+    "bv",
+    "hp-b02-n-2",
+    "hp-b02-n-3",
+    "hp-b02-n-4",
+    "pyr",
+    "met"
+   ],
+   "trazado": [
+    {
+     "lat": 11.00259,
+     "lon": -74.82186,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 85"
+    },
+    {
+     "lat": 11.00293,
+     "lon": -74.82289,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 87"
+    },
+    {
+     "lat": 11.00283,
+     "lon": -74.82303,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 87"
+    },
+    {
+     "lat": 11.0029,
+     "lon": -74.8232,
+     "via": "Carrera 47",
+     "cruce": "Avenida Carrera 46"
+    },
+    {
+     "lat": 11.00353,
+     "lon": -74.82463,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 90"
+    },
+    {
+     "lat": 11.00371,
+     "lon": -74.82467,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 90"
+    },
+    {
+     "lat": 11.00477,
+     "lon": -74.82689,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 93"
+    },
+    {
+     "lat": 11.00901,
+     "lon": -74.8253,
+     "via": "Calle 93",
+     "cruce": "Carrera 51B"
+    },
+    {
+     "lat": 11.00959,
+     "lon": -74.82516,
+     "via": "Calle 94",
+     "cruce": "Carrera 51B"
+    },
+    {
+     "lat": 11.01114,
+     "lon": -74.82428,
+     "via": "Carrera 52B",
+     "cruce": "Calle 94"
+    },
+    {
+     "lat": 11.01137,
+     "lon": -74.82434,
+     "via": "Carrera 52B",
+     "cruce": "Calle 94"
+    },
+    {
+     "lat": 11.0118,
+     "lon": -74.82511,
+     "via": "Carrera 52B",
+     "cruce": "Calle 96"
+    },
+    {
+     "lat": 11.01268,
+     "lon": -74.82739,
+     "via": "Carrera 52B",
+     "cruce": "Calle 98"
+    },
+    {
+     "lat": 11.0121,
+     "lon": -74.82779,
+     "via": "Calle 98",
+     "cruce": "Carrera 52"
+    },
+    {
+     "lat": 11.01245,
+     "lon": -74.82867,
+     "via": "Calle 99",
+     "cruce": "Calle 98"
+    },
+    {
+     "lat": 11.01431,
+     "lon": -74.82747,
+     "via": "Calle 99",
+     "cruce": "Carrera 53"
+    },
+    {
+     "lat": 11.01449,
+     "lon": -74.82744,
+     "via": "Calle 99",
+     "cruce": "Carrera 53"
+    },
+    {
+     "lat": 11.01432,
+     "lon": -74.82716,
+     "via": "Calle 99",
+     "cruce": "Carrera 53"
+    },
+    {
+     "lat": 11.01491,
+     "lon": -74.82816,
+     "via": "Carrera 53",
+     "cruce": "Calle 99"
+    },
+    {
+     "lat": 11.015,
+     "lon": -74.82847,
+     "via": "Carrera 53",
+     "cruce": "Carrera 55"
+    },
+    {
+     "lat": 11.015,
+     "lon": -74.83,
+     "via": "Carrera 53",
+     "cruce": "Calle 100"
+    },
+    {
+     "lat": 11.01515,
+     "lon": -74.83046,
+     "via": "Calle 100",
+     "cruce": "Carrera 53"
+    },
+    {
+     "lat": 11.0152,
+     "lon": -74.8308,
+     "via": "Carrera 53",
+     "cruce": "Calle 100"
+    },
+    {
+     "lat": 11.0169,
+     "lon": -74.8335,
+     "via": "Carrera 53",
+     "cruce": "Carrera 55"
+    },
+    {
+     "lat": 11.01683,
+     "lon": -74.83367,
+     "via": "Carrera 53",
+     "cruce": "Carrera 55"
+    },
+    {
+     "lat": 11.01769,
+     "lon": -74.83495,
+     "via": "Carrera 53",
+     "cruce": "Calle 106"
+    },
+    {
+     "lat": 11.01902,
+     "lon": -74.83718,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 23"
+    },
+    {
+     "lat": 11.0161,
+     "lon": -74.8383,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 51B"
+    },
+    {
+     "lat": 11.01568,
+     "lon": -74.83855,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 51B"
+    },
+    {
+     "lat": 11.01545,
+     "lon": -74.83858,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 51B"
+    },
+    {
+     "lat": 11.01186,
+     "lon": -74.84012,
+     "via": "Salida a Avenida Circunvalar",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 11.01158,
+     "lon": -74.84015,
+     "via": "Avenida Circunvalar",
+     "cruce": "Vía Barranquilla - Cartagena"
+    },
+    {
+     "lat": 11.0112,
+     "lon": -74.8404,
+     "via": "Avenida Circunvalar",
+     "cruce": "Vía Barranquilla - Cartagena"
+    },
+    {
+     "lat": 11.009,
+     "lon": -74.8412,
+     "via": "Salida a Avenida Circunvalar",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 11.0066,
+     "lon": -74.8418,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 11.0043,
+     "lon": -74.8419,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 11.0017,
+     "lon": -74.8414,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 10.9969,
+     "lon": -74.8396,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 43"
+    },
+    {
+     "lat": 10.9913,
+     "lon": -74.8376,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 43"
+    },
+    {
+     "lat": 10.9894,
+     "lon": -74.8368,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 10.9865,
+     "lon": -74.8362,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 40C"
+    },
+    {
+     "lat": 10.98272,
+     "lon": -74.83606,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.98254,
+     "lon": -74.8362,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.98238,
+     "lon": -74.83604,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.981,
+     "lon": -74.836,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 36B"
+    },
+    {
+     "lat": 10.9785,
+     "lon": -74.836,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 31"
+    },
+    {
+     "lat": 10.9757,
+     "lon": -74.8361,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 29"
+    },
+    {
+     "lat": 10.973,
+     "lon": -74.8366,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 26B"
+    },
+    {
+     "lat": 10.9704,
+     "lon": -74.8374,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 111C"
+    },
+    {
+     "lat": 10.9675,
+     "lon": -74.8382,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 109B"
+    },
+    {
+     "lat": 10.9648,
+     "lon": -74.8383,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 17"
+    },
+    {
+     "lat": 10.96,
+     "lon": -74.8371,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9528,
+     "lon": -74.835,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9506,
+     "lon": -74.8343,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 6O"
+    },
+    {
+     "lat": 10.9493,
+     "lon": -74.834,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 6O"
+    },
+    {
+     "lat": 10.9481,
+     "lon": -74.8336,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 6O"
+    },
+    {
+     "lat": 10.94612,
+     "lon": -74.83341,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 6C"
+    },
+    {
+     "lat": 10.9447,
+     "lon": -74.8335,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 6C"
+    },
+    {
+     "lat": 10.9431,
+     "lon": -74.8337,
+     "via": "Avenida Circunvalar",
+     "cruce": "Autopista de La Cordialidad"
+    },
+    {
+     "lat": 10.939,
+     "lon": -74.834,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 10.9375,
+     "lon": -74.8342,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 10.9355,
+     "lon": -74.8343,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 2 Sur"
+    },
+    {
+     "lat": 10.9342,
+     "lon": -74.8342,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 107"
+    },
+    {
+     "lat": 10.9327,
+     "lon": -74.8337,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 107"
+    },
+    {
+     "lat": 10.93157,
+     "lon": -74.833,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 107"
+    },
+    {
+     "lat": 10.9308,
+     "lon": -74.8324,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 100"
+    },
+    {
+     "lat": 10.9297,
+     "lon": -74.831,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 99"
+    },
+    {
+     "lat": 10.9289,
+     "lon": -74.8295,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 98"
+    },
+    {
+     "lat": 10.9273,
+     "lon": -74.826,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 90A"
+    },
+    {
+     "lat": 10.9265,
+     "lon": -74.8244,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.9258,
+     "lon": -74.8227,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.9252,
+     "lon": -74.8216,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.924,
+     "lon": -74.8189,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9232,
+     "lon": -74.8174,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.9227,
+     "lon": -74.8155,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.9227,
+     "lon": -74.8141,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 24"
+    },
+    {
+     "lat": 10.9229,
+     "lon": -74.8112,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 24"
+    },
+    {
+     "lat": 10.9231,
+     "lon": -74.8067,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92349,
+     "lon": -74.80136,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.92356,
+     "lon": -74.79923,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9257,
+     "lon": -74.7992,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 11 Sur"
+    },
+    {
+     "lat": 10.92707,
+     "lon": -74.79926,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 11 Sur"
+    }
+   ],
+   "pasaPor": [
+    "zhp",
+    "bv",
+    "pyr",
+    "met"
+   ],
+   "paradasHotel": true,
+   "corredor": "B02"
+  },
+  {
+   "id": "B03",
+   "tipo": "propuesta",
+   "nombre": "B03 · Circuito Ciudad y Cultura (Centro y Malecón)",
+   "destino": "Joe Arroyo",
+   "color": "#FBC02D",
+   "seBasaEn": {
+    "es": "Ruta alimentadora Gran Malecón de Transmetro (Joe Arroyo, Calle 74, Calle 72 y Vía 40; domingos y festivos), que esta propuesta extiende hasta el centro histórico y hace circular todos los días.",
+    "en": "Transmetro’s Gran Malecón feeder route (Joe Arroyo, Calle 74, Calle 72 and Vía 40; Sundays and holidays), which this proposal extends to the historic centre and runs every day.",
+    "pt": "Rota alimentadora Gran Malecón do Transmetro (Joe Arroyo, Calle 74, Calle 72 e Vía 40; domingos e feriados), que esta proposta estende até o centro histórico e faz circular todos os dias."
+   },
+   "opera": {
+    "es": "Transmetro, con buses padrones o eléctricos.",
+    "en": "Transmetro, with standard or electric buses.",
+    "pt": "Transmetro, com ônibus padrão ou elétricos."
+   },
+   "cuando": {
+    "es": "Todos los días de 9:00 a 21:00; cada 15 minutos en temporada de Carnaval y eventos.",
+    "en": "Every day 9:00–21:00; every 15 minutes during Carnival and events.",
+    "pt": "Todos os dias, 9h–21h; a cada 15 minutos no Carnaval e em eventos."
+   },
+   "estaciones": [
+    "ja",
+    "hp-b03-1",
+    "pdc",
+    "vdc",
+    "adu",
+    "mdc",
+    "hp-b03-2",
+    "ja"
+   ],
+   "trazado": [
+    {
+     "lat": 10.9945,
+     "lon": -74.80775,
+     "via": "Calle 74",
+     "cruce": "Carrera 45"
+    },
+    {
+     "lat": 10.99512,
+     "lon": -74.80704,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99481,
+     "lon": -74.80643,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99452,
+     "lon": -74.80601,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.99451,
+     "lon": -74.80542,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.9974,
+     "lon": -74.8038,
+     "via": "Avenida Calle 72",
+     "cruce": "Carrera 50"
+    },
+    {
+     "lat": 10.9984,
+     "lon": -74.8025,
+     "via": "Avenida Calle 72",
+     "cruce": "Carrera 53"
+    },
+    {
+     "lat": 10.99851,
+     "lon": -74.80197,
+     "via": "Avenida Calle 72",
+     "cruce": "Avenida 11 de Noviembre"
+    },
+    {
+     "lat": 10.9987,
+     "lon": -74.8019,
+     "via": "Avenida Calle 72",
+     "cruce": "Avenida 11 de Noviembre"
+    },
+    {
+     "lat": 10.99897,
+     "lon": -74.80157,
+     "via": "Avenida Calle 72",
+     "cruce": "Avenida 11 de Noviembre"
+    },
+    {
+     "lat": 10.99912,
+     "lon": -74.80131,
+     "via": "Avenida Calle 72",
+     "cruce": "Avenida 11 de Noviembre"
+    },
+    {
+     "lat": 11.0012,
+     "lon": -74.7985,
+     "via": "Avenida Calle 72",
+     "cruce": "Carrera 58"
+    },
+    {
+     "lat": 11.0018,
+     "lon": -74.7976,
+     "via": "Avenida Calle 72",
+     "cruce": "Carrera 59"
+    },
+    {
+     "lat": 11.0036,
+     "lon": -74.7952,
+     "via": "Avenida Calle 72",
+     "cruce": "Carrera 62"
+    },
+    {
+     "lat": 11.00657,
+     "lon": -74.793,
+     "via": "Avenida Calle 72",
+     "cruce": "Carrera 68"
+    },
+    {
+     "lat": 11.00676,
+     "lon": -74.79274,
+     "via": "Avenida Calle 72",
+     "cruce": "Carrera 68"
+    },
+    {
+     "lat": 11.0072,
+     "lon": -74.7915,
+     "via": "Carrera 71",
+     "cruce": "Calle 71"
+    },
+    {
+     "lat": 11.00783,
+     "lon": -74.79047,
+     "via": "Vía 40",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 11.0088,
+     "lon": -74.7897,
+     "via": "Avenida Calle 72",
+     "cruce": "Vía 40"
+    },
+    {
+     "lat": 11.01132,
+     "lon": -74.78683,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 11.0116,
+     "lon": -74.7868,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 11.01187,
+     "lon": -74.7866,
+     "via": "Avenida Calle 72",
+     "cruce": "Rotonda Malecón 72"
+    },
+    {
+     "lat": 11.01202,
+     "lon": -74.78635,
+     "via": "Avenida Calle 72",
+     "cruce": "Rotonda Malecón 72"
+    },
+    {
+     "lat": 11.013,
+     "lon": -74.7862,
+     "via": "Avenida del Río",
+     "cruce": "Rotonda Malecón 72"
+    },
+    {
+     "lat": 11.0133,
+     "lon": -74.7874,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 11.0155,
+     "lon": -74.7893,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 11.0133,
+     "lon": -74.7874,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 11.01285,
+     "lon": -74.78578,
+     "via": "Avenida del Río",
+     "cruce": "Rotonda Malecón 72"
+    },
+    {
+     "lat": 11.0126,
+     "lon": -74.7856,
+     "via": "Rotonda Malecón 72",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 11.012,
+     "lon": -74.7847,
+     "via": "Avenida del Río",
+     "cruce": "Rotonda Malecón 72"
+    },
+    {
+     "lat": 11.0111,
+     "lon": -74.7837,
+     "via": "Avenida del Río",
+     "cruce": "Calle 69"
+    },
+    {
+     "lat": 11.0101,
+     "lon": -74.7827,
+     "via": "Avenida del Río",
+     "cruce": "Calle 69"
+    },
+    {
+     "lat": 11.0057,
+     "lon": -74.778,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 11.0031,
+     "lon": -74.7756,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 11.0007,
+     "lon": -74.7739,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 10.99942,
+     "lon": -74.77342,
+     "via": "Avenida del Río",
+     "cruce": "Rotonda Aleta del Tiburón"
+    },
+    {
+     "lat": 10.99925,
+     "lon": -74.77315,
+     "via": "Avenida del Río",
+     "cruce": "Rotonda Aleta del Tiburón"
+    },
+    {
+     "lat": 10.99854,
+     "lon": -74.7727,
+     "via": "Rotonda Aleta del Tiburón",
+     "cruce": "Avenida del Río"
+    },
+    {
+     "lat": 10.99838,
+     "lon": -74.77262,
+     "via": "Rotonda Aleta del Tiburón",
+     "cruce": "Avenida del Río"
+    },
+    {
+     "lat": 10.99812,
+     "lon": -74.77263,
+     "via": "Rotonda Aleta del Tiburón",
+     "cruce": "Avenida del Río"
+    },
+    {
+     "lat": 10.9982,
+     "lon": -74.7724,
+     "via": "Rotonda Aleta del Tiburón",
+     "cruce": "Avenida del Río"
+    },
+    {
+     "lat": 10.99812,
+     "lon": -74.77263,
+     "via": "Rotonda Aleta del Tiburón",
+     "cruce": "Avenida del Río"
+    },
+    {
+     "lat": 10.99821,
+     "lon": -74.77296,
+     "via": "Rotonda Aleta del Tiburón",
+     "cruce": "Avenida del Río"
+    },
+    {
+     "lat": 10.99804,
+     "lon": -74.77301,
+     "via": "Rotonda Aleta del Tiburón",
+     "cruce": "Avenida del Río"
+    },
+    {
+     "lat": 10.99792,
+     "lon": -74.77288,
+     "via": "Rotonda Aleta del Tiburón",
+     "cruce": "Avenida del Río"
+    },
+    {
+     "lat": 10.9979,
+     "lon": -74.7727,
+     "via": "Rotonda Aleta del Tiburón",
+     "cruce": "Avenida del Río"
+    },
+    {
+     "lat": 10.9968,
+     "lon": -74.7717,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 10.9956,
+     "lon": -74.7705,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 10.9945,
+     "lon": -74.7701,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 10.9932,
+     "lon": -74.7707,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 10.9912,
+     "lon": -74.7718,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 10.99017,
+     "lon": -74.77197,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 10.99015,
+     "lon": -74.77219,
+     "via": "Avenida del Río",
+     "cruce": null
+    },
+    {
+     "lat": 10.98924,
+     "lon": -74.77509,
+     "via": "Calle 9",
+     "cruce": "Carrera 48"
+    },
+    {
+     "lat": 10.98877,
+     "lon": -74.77553,
+     "via": "Calle 9",
+     "cruce": "Carrera 47"
+    },
+    {
+     "lat": 10.98858,
+     "lon": -74.77579,
+     "via": "Calle 9",
+     "cruce": "Carrera 47"
+    },
+    {
+     "lat": 10.98807,
+     "lon": -74.77683,
+     "via": "Calle 10",
+     "cruce": "Carrera 47"
+    },
+    {
+     "lat": 10.98802,
+     "lon": -74.77715,
+     "via": "Vía 40",
+     "cruce": "Carrera 47"
+    },
+    {
+     "lat": 10.9879,
+     "lon": -74.7773,
+     "via": "Vía 40",
+     "cruce": "Carrera 47"
+    },
+    {
+     "lat": 10.98837,
+     "lon": -74.77777,
+     "via": "Vía 40",
+     "cruce": "Carrera 50"
+    },
+    {
+     "lat": 10.9884,
+     "lon": -74.778,
+     "via": "Vía 40",
+     "cruce": "Carrera 50A"
+    },
+    {
+     "lat": 10.9887,
+     "lon": -74.7782,
+     "via": "Vía 40",
+     "cruce": "Carrera 50A"
+    },
+    {
+     "lat": 10.9903,
+     "lon": -74.7796,
+     "via": "Vía 40",
+     "cruce": "Calle 39"
+    },
+    {
+     "lat": 10.992,
+     "lon": -74.78,
+     "via": "Vía 40",
+     "cruce": "Calle 39"
+    },
+    {
+     "lat": 10.9933,
+     "lon": -74.7805,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.99506,
+     "lon": -74.78151,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.99624,
+     "lon": -74.7824,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9961,
+     "lon": -74.7827,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9959,
+     "lon": -74.7828,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.99507,
+     "lon": -74.78288,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.99483,
+     "lon": -74.78304,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9944,
+     "lon": -74.7839,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9938,
+     "lon": -74.7854,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9927,
+     "lon": -74.7887,
+     "via": "Avenida 11 de Noviembre",
+     "cruce": "Calle 53"
+    },
+    {
+     "lat": 10.9927,
+     "lon": -74.7903,
+     "via": "Avenida 11 de Noviembre",
+     "cruce": "Calle 53"
+    },
+    {
+     "lat": 10.9931,
+     "lon": -74.7919,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.994,
+     "lon": -74.793,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.995,
+     "lon": -74.794,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9965,
+     "lon": -74.7961,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9972,
+     "lon": -74.7977,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9986,
+     "lon": -74.8012,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.99872,
+     "lon": -74.80132,
+     "via": "Avenida Calle 72",
+     "cruce": "Avenida 11 de Noviembre"
+    },
+    {
+     "lat": 10.99859,
+     "lon": -74.80163,
+     "via": "Avenida Calle 72",
+     "cruce": "Avenida 11 de Noviembre"
+    },
+    {
+     "lat": 10.9984,
+     "lon": -74.8025,
+     "via": "Avenida Calle 72",
+     "cruce": "Carrera 53"
+    },
+    {
+     "lat": 10.9974,
+     "lon": -74.8038,
+     "via": "Avenida Calle 72",
+     "cruce": "Carrera 50"
+    },
+    {
+     "lat": 10.99451,
+     "lon": -74.80542,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.99452,
+     "lon": -74.80601,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.99481,
+     "lon": -74.80643,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99512,
+     "lon": -74.80704,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.9945,
+     "lon": -74.80775,
+     "via": "Calle 74",
+     "cruce": "Carrera 45"
+    }
+   ],
+   "pasaPor": [
+    "ja",
+    "pdc",
+    "vdc",
+    "adu",
+    "mdc",
+    "ja"
+   ],
+   "paradasHotel": true,
+   "corredor": "B03"
+  },
+  {
+   "id": "B04",
+   "tipo": "propuesta",
+   "nombre": "B04 · Circuito Costa (Malecón → Puerto Colombia)",
+   "destino": "Puerto Colombia · Muelle",
+   "color": "#2E7D32",
+   "seBasaEn": {
+    "es": "Ruta Mallorquín de Transmetro (Gran Malecón, Vía 40 y Ecoparque Ciénaga de Mallorquín, fines de semana) y la Ruta Navideña hasta Ventana al Mundo por la Av. Circunvalar. La extensión hasta Puerto Colombia es nueva.",
+    "en": "Transmetro’s Ruta Mallorquín (Gran Malecón, Vía 40 and Ecoparque Ciénaga de Mallorquín, weekends) and the Christmas route to Ventana al Mundo along Av. Circunvalar. The extension to Puerto Colombia is new.",
+    "pt": "Rota Mallorquín do Transmetro (Gran Malecón, Vía 40 e Ecoparque Ciénaga de Mallorquín, fins de semana) e a Rota Natalina até a Ventana al Mundo pela Av. Circunvalar. A extensão até Puerto Colombia é nova."
+   },
+   "opera": {
+    "es": "Transmetro, con tarifa integrada en el tramo a Puerto Colombia (por acordar con el AMB y las empresas intermunicipales).",
+    "en": "Transmetro, with an integrated fare on the Puerto Colombia stretch (to be agreed with the AMB and the intercity companies).",
+    "pt": "Transmetro, com tarifa integrada no trecho até Puerto Colombia (a combinar com a AMB e as empresas intermunicipais)."
+   },
+   "cuando": {
+    "es": "Fines de semana y festivos, de 8:00 a 19:00 (propuesto).",
+    "en": "Weekends and holidays, 8:00–19:00 (proposed).",
+    "pt": "Fins de semana e feriados, 8h–19h (proposto)."
+   },
+   "estaciones": [
+    "pdo",
+    "hp-b04-1",
+    "vam",
+    "eco",
+    "pco"
+   ],
+   "trazado": [
+    {
+     "lat": 11.02293,
+     "lon": -74.80078,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 11.027,
+     "lon": -74.8045,
+     "via": "Vía 40",
+     "cruce": "Calle 85"
+    },
+    {
+     "lat": 11.0293,
+     "lon": -74.8065,
+     "via": "Vía 40",
+     "cruce": null
+    },
+    {
+     "lat": 11.0313,
+     "lon": -74.8086,
+     "via": "Vía 40",
+     "cruce": null
+    },
+    {
+     "lat": 11.0364,
+     "lon": -74.8157,
+     "via": "Vía 40",
+     "cruce": null
+    },
+    {
+     "lat": 11.0376,
+     "lon": -74.8179,
+     "via": "Vía 40",
+     "cruce": null
+    },
+    {
+     "lat": 11.0387,
+     "lon": -74.8227,
+     "via": "Vía 40",
+     "cruce": "Carrera 79"
+    },
+    {
+     "lat": 11.0392,
+     "lon": -74.8253,
+     "via": "Vía 40",
+     "cruce": "Carrera 83"
+    },
+    {
+     "lat": 11.03885,
+     "lon": -74.82682,
+     "via": "Vía 40",
+     "cruce": "Calle 109A"
+    },
+    {
+     "lat": 11.03868,
+     "lon": -74.82706,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 11.0385,
+     "lon": -74.8271,
+     "via": "Avenida Circunvalar",
+     "cruce": "Autopista Circunvalar de la Prosperidad"
+    },
+    {
+     "lat": 11.0352,
+     "lon": -74.8294,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 11.03429,
+     "lon": -74.83043,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 75A"
+    },
+    {
+     "lat": 11.03395,
+     "lon": -74.83033,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 75A"
+    },
+    {
+     "lat": 11.0336,
+     "lon": -74.8307,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 75A"
+    },
+    {
+     "lat": 11.033,
+     "lon": -74.83107,
+     "via": "Carrera 75A",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 11.0336,
+     "lon": -74.8307,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 75A"
+    },
+    {
+     "lat": 11.03395,
+     "lon": -74.83033,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 75A"
+    },
+    {
+     "lat": 11.03429,
+     "lon": -74.83043,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 75A"
+    },
+    {
+     "lat": 11.0352,
+     "lon": -74.8294,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 11.03836,
+     "lon": -74.8272,
+     "via": "Avenida Circunvalar",
+     "cruce": "Autopista Circunvalar de la Prosperidad"
+    },
+    {
+     "lat": 11.03861,
+     "lon": -74.82767,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": "Calle 111"
+    },
+    {
+     "lat": 11.0378,
+     "lon": -74.8295,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": "Calle 113"
+    },
+    {
+     "lat": 11.0366,
+     "lon": -74.8317,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": null
+    },
+    {
+     "lat": 11.0355,
+     "lon": -74.8335,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": null
+    },
+    {
+     "lat": 11.0346,
+     "lon": -74.836,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": null
+    },
+    {
+     "lat": 11.0342,
+     "lon": -74.8381,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": null
+    },
+    {
+     "lat": 11.0326,
+     "lon": -74.84,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": null
+    },
+    {
+     "lat": 11.0304,
+     "lon": -74.8478,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": null
+    },
+    {
+     "lat": 11.0299,
+     "lon": -74.8501,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": null
+    },
+    {
+     "lat": 11.03,
+     "lon": -74.8533,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": "Calle 2A"
+    },
+    {
+     "lat": 11.0307,
+     "lon": -74.8564,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": "Calle 5"
+    },
+    {
+     "lat": 11.0311,
+     "lon": -74.8588,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 11.03097,
+     "lon": -74.85897,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 11.03094,
+     "lon": -74.85933,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 11.0308,
+     "lon": -74.8595,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 11.0299,
+     "lon": -74.86,
+     "via": "Autopista Circunvalar de la Prosperidad",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 11.0279,
+     "lon": -74.8627,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 11.0277,
+     "lon": -74.8648,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 11.0253,
+     "lon": -74.8697,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 11.0237,
+     "lon": -74.8712,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 11.0205,
+     "lon": -74.8745,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 11.0193,
+     "lon": -74.8764,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 11.0174,
+     "lon": -74.8771,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 11.0146,
+     "lon": -74.87646,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": "Autopista Circunvalar de la Prosperidad"
+    },
+    {
+     "lat": 11.01433,
+     "lon": -74.87663,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": "Autopista Circunvalar de la Prosperidad"
+    },
+    {
+     "lat": 11.014,
+     "lon": -74.8791,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": null
+    },
+    {
+     "lat": 11.0138,
+     "lon": -74.8815,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": "Vía al Mar"
+    },
+    {
+     "lat": 11.0111,
+     "lon": -74.9029,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": null
+    },
+    {
+     "lat": 11.0108,
+     "lon": -74.9061,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": null
+    },
+    {
+     "lat": 11.0104,
+     "lon": -74.9087,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": "Antigua Carretera a Puerto Colombia"
+    },
+    {
+     "lat": 11.0099,
+     "lon": -74.9111,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": "Antigua Carretera a Puerto Colombia"
+    },
+    {
+     "lat": 11.0091,
+     "lon": -74.9132,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": "Antigua Carretera a Puerto Colombia"
+    },
+    {
+     "lat": 11.0047,
+     "lon": -74.9205,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": null
+    },
+    {
+     "lat": 11.0006,
+     "lon": -74.9275,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.9993,
+     "lon": -74.9322,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": null
+    },
+    {
+     "lat": 10.99876,
+     "lon": -74.93518,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": null
+    },
+    {
+     "lat": 10.9986,
+     "lon": -74.93525,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": null
+    },
+    {
+     "lat": 10.99666,
+     "lon": -74.94183,
+     "via": "",
+     "cruce": ""
+    },
+    {
+     "lat": 10.99664,
+     "lon": -74.94214,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": null
+    },
+    {
+     "lat": 10.9952,
+     "lon": -74.9437,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": "Vía a Puerto Colombia"
+    },
+    {
+     "lat": 10.99455,
+     "lon": -74.94395,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": "Vía a Puerto Colombia"
+    },
+    {
+     "lat": 10.99445,
+     "lon": -74.9442,
+     "via": "Vía Barranquilla - Cartagena",
+     "cruce": "Vía a Puerto Colombia"
+    },
+    {
+     "lat": 10.99361,
+     "lon": -74.94471,
+     "via": "Vía a Puerto Colombia",
+     "cruce": "Vía Barranquilla - Cartagena"
+    },
+    {
+     "lat": 10.99148,
+     "lon": -74.94618,
+     "via": "Vía a Puerto Colombia",
+     "cruce": null
+    },
+    {
+     "lat": 10.99102,
+     "lon": -74.94661,
+     "via": "Vía a Puerto Colombia",
+     "cruce": null
+    },
+    {
+     "lat": 10.9873,
+     "lon": -74.95059,
+     "via": "Calle 13",
+     "cruce": "Carrera 10D"
+    },
+    {
+     "lat": 10.98708,
+     "lon": -74.95141,
+     "via": "Calle 13",
+     "cruce": "Calle 12"
+    },
+    {
+     "lat": 10.98717,
+     "lon": -74.9517,
+     "via": "Carrera 10",
+     "cruce": "Calle 11B"
+    },
+    {
+     "lat": 10.9878,
+     "lon": -74.95234,
+     "via": "Carrera 10",
+     "cruce": "Calle 11A"
+    },
+    {
+     "lat": 10.99005,
+     "lon": -74.95397,
+     "via": "Carrera 10",
+     "cruce": "Calle 6A"
+    },
+    {
+     "lat": 10.99135,
+     "lon": -74.9563,
+     "via": "Carrera 10",
+     "cruce": "Calle 2"
+    },
+    {
+     "lat": 10.99009,
+     "lon": -74.9571,
+     "via": "Calle 2",
+     "cruce": "Carrera 8"
+    },
+    {
+     "lat": 10.98968,
+     "lon": -74.95746,
+     "via": "Calle 3",
+     "cruce": "Calle 2"
+    },
+    {
+     "lat": 10.98919,
+     "lon": -74.95819,
+     "via": "Carrera 6",
+     "cruce": "Calle 2"
+    },
+    {
+     "lat": 10.98919,
+     "lon": -74.95842,
+     "via": "Carrera 6",
+     "cruce": "Calle 2"
+    },
+    {
+     "lat": 10.98933,
+     "lon": -74.95864,
+     "via": "Carrera 6",
+     "cruce": "Calle 2"
+    }
+   ],
+   "pasaPor": [
+    "pdo",
+    "vam",
+    "eco",
+    "pco"
+   ],
+   "paradasHotel": true,
+   "corredor": "B04"
+  },
+  {
+   "id": "B05",
+   "tipo": "propuesta",
+   "nombre": "B05 · Park & Ride Circunvalar → Estadio Metropolitano",
+   "destino": "Estadio Metropolitano",
+   "color": "#7B1FA2",
+   "seBasaEn": {
+    "es": "Buses que entran a la ciudad por la Autopista de La Cordialidad y la Av. Circunvalar.",
+    "en": "Buses entering the city via the Cordialidad highway and Av. Circunvalar.",
+    "pt": "Ônibus que entram na cidade pela rodovia da Cordialidad e a Av. Circunvalar."
+   },
+   "opera": {
+    "es": "Lanzadera de Transmetro con parqueadero disuasorio.",
+    "en": "Transmetro shuttle with a park-and-ride lot.",
+    "pt": "Lançadeira do Transmetro com estacionamento dissuasório."
+   },
+   "cuando": {
+    "es": "Solo días de partido y conciertos en el estadio.",
+    "en": "Match and concert days at the stadium only.",
+    "pt": "Só em dias de jogo e shows no estádio."
+   },
+   "estaciones": [
+    "pyr",
+    "met"
+   ],
+   "trazado": [
+    {
+     "lat": 10.94334,
+     "lon": -74.83367,
+     "via": "Avenida Circunvalar",
+     "cruce": "Autopista de La Cordialidad"
+    },
+    {
+     "lat": 10.9439,
+     "lon": -74.83312,
+     "via": "Avenida Circunvalar",
+     "cruce": "Autopista de La Cordialidad"
+    },
+    {
+     "lat": 10.94377,
+     "lon": -74.83231,
+     "via": "Autopista de La Cordialidad",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 10.94331,
+     "lon": -74.83305,
+     "via": "Autopista de La Cordialidad",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 10.94342,
+     "lon": -74.83433,
+     "via": "Autopista de La Cordialidad",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 10.94347,
+     "lon": -74.83502,
+     "via": "Autopista de La Cordialidad",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 10.94399,
+     "lon": -74.83419,
+     "via": "Avenida Circunvalar",
+     "cruce": "Autopista de La Cordialidad"
+    },
+    {
+     "lat": 10.94349,
+     "lon": -74.83376,
+     "via": "Avenida Circunvalar",
+     "cruce": "Autopista de La Cordialidad"
+    },
+    {
+     "lat": 10.94183,
+     "lon": -74.83395,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 10.94017,
+     "lon": -74.83407,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 10.93958,
+     "lon": -74.83414,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 10.93868,
+     "lon": -74.83423,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 10.9371,
+     "lon": -74.83437,
+     "via": "Avenida Circunvalar",
+     "cruce": null
+    },
+    {
+     "lat": 10.93554,
+     "lon": -74.83452,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 2 Sur"
+    },
+    {
+     "lat": 10.93476,
+     "lon": -74.83449,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 3 Sur"
+    },
+    {
+     "lat": 10.93375,
+     "lon": -74.83429,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 107"
+    },
+    {
+     "lat": 10.93284,
+     "lon": -74.83395,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 107"
+    },
+    {
+     "lat": 10.93228,
+     "lon": -74.83367,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 107"
+    },
+    {
+     "lat": 10.93169,
+     "lon": -74.83334,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 107"
+    },
+    {
+     "lat": 10.93116,
+     "lon": -74.83296,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 107"
+    },
+    {
+     "lat": 10.9307,
+     "lon": -74.83254,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 100"
+    },
+    {
+     "lat": 10.93003,
+     "lon": -74.83184,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 100"
+    },
+    {
+     "lat": 10.92959,
+     "lon": -74.8312,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 99"
+    },
+    {
+     "lat": 10.92918,
+     "lon": -74.83047,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 99"
+    },
+    {
+     "lat": 10.92884,
+     "lon": -74.8298,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 98"
+    },
+    {
+     "lat": 10.92806,
+     "lon": -74.82809,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 96"
+    },
+    {
+     "lat": 10.92764,
+     "lon": -74.82726,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 96"
+    },
+    {
+     "lat": 10.92716,
+     "lon": -74.8262,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 90A"
+    },
+    {
+     "lat": 10.9268,
+     "lon": -74.82539,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92652,
+     "lon": -74.82482,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92583,
+     "lon": -74.82336,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92538,
+     "lon": -74.82236,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92458,
+     "lon": -74.82067,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92347,
+     "lon": -74.81836,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.923,
+     "lon": -74.81745,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92276,
+     "lon": -74.81681,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92253,
+     "lon": -74.81579,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92249,
+     "lon": -74.81478,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92253,
+     "lon": -74.81406,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 24"
+    },
+    {
+     "lat": 10.92259,
+     "lon": -74.81279,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 24"
+    },
+    {
+     "lat": 10.92266,
+     "lon": -74.81176,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 24"
+    },
+    {
+     "lat": 10.92271,
+     "lon": -74.81072,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 24"
+    },
+    {
+     "lat": 10.9229,
+     "lon": -74.80706,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92304,
+     "lon": -74.80418,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92309,
+     "lon": -74.80339,
+     "via": "Avenida Circunvalar",
+     "cruce": "Carrera 15 Sur"
+    },
+    {
+     "lat": 10.92325,
+     "lon": -74.80265,
+     "via": "Avenida Circunvalar",
+     "cruce": "Calle 46"
+    },
+    {
+     "lat": 10.92361,
+     "lon": -74.80261,
+     "via": "Calle 46",
+     "cruce": "Carrera 14 Sur"
+    },
+    {
+     "lat": 10.9243,
+     "lon": -74.80262,
+     "via": "Calle 46",
+     "cruce": "Carrera 12A Sur"
+    },
+    {
+     "lat": 10.92516,
+     "lon": -74.80262,
+     "via": "Calle 46",
+     "cruce": "Carrera 12 Sur"
+    },
+    {
+     "lat": 10.92624,
+     "lon": -74.80261,
+     "via": "Calle 46",
+     "cruce": "Carrera 9B"
+    },
+    {
+     "lat": 10.92692,
+     "lon": -74.80259,
+     "via": "Calle 46",
+     "cruce": "Carrera 9 Sur"
+    },
+    {
+     "lat": 10.92765,
+     "lon": -74.80259,
+     "via": "Calle 46",
+     "cruce": "Carrera 7A Sur"
+    },
+    {
+     "lat": 10.92851,
+     "lon": -74.80258,
+     "via": "Calle 46",
+     "cruce": "Vía Estadio"
+    },
+    {
+     "lat": 10.92809,
+     "lon": -74.80181,
+     "via": "Vía Estadio",
+     "cruce": "Calle 46"
+    },
+    {
+     "lat": 10.92767,
+     "lon": -74.8014,
+     "via": "Vía Estadio",
+     "cruce": "Calle 46"
+    }
+   ],
+   "corredor": "B05"
   }
  ]
 }

@@ -14,6 +14,7 @@ import { mostrarLetrero } from './letrero.js';
 import { ORDEN_IDIOMAS } from './i18n.js';
 import { t, getIdioma, setIdioma, aplicarTextos } from './idioma.js';
 import { iniciarTema, actualizarBotonTema } from './tema.js';
+import { iniciarPropuesta } from './propuesta.js';
 import { PASO_MANUAL_METROS, ROTACION_IDIOMA_SEGUNDOS } from './config.js';
 
 async function iniciar() {
@@ -22,21 +23,46 @@ async function iniciar() {
   $('idioma').value = getIdioma();
   iniciarTema();
 
+  iniciarPropuesta(); // secciones explicativas de la propuesta de valor
+
   // 1. Datos
-  const [estaciones, rutas, hoteles, lugares, mapaBase, mejoras] = await Promise.all(
-    ['estaciones', 'rutas', 'hoteles', 'lugares', 'mapa-base', 'mejoras'].map((n) => cargarJSON(`data/${n}.json`)),
+  const [estaciones, rutas, hoteles, lugares, mapaBase, mejoras, corredoresDatos] = await Promise.all(
+    ['estaciones', 'rutas', 'hoteles', 'lugares', 'mapa-base', 'mejoras', 'corredores'].map((n) => cargarJSON(`data/${n}.json`)),
   );
   const datosRutas = Object.fromEntries(rutas.rutas.map((r) => [r.id, r]));
   const elegidos = new Set(hoteles.hoteles.filter((h) => h.porDefecto).map((h) => h.nombre));
   const prepararRuta = (id) => crearRuta(datosRutas[id], estaciones.estaciones, hoteles.hoteles);
 
   // 2. Selector de rutas
-  $('ruta').innerHTML = rutas.rutas
-    .map((r) => `<option value="${escapar(r.id)}">${escapar(r.nombre)}</option>`)
-    .join('');
+  // Agrupadas: primero las rutas reales de Transmetro y luego las propuestas BAQ360.
+  function llenarSelectorRutas() {
+    const elegida = $('ruta').value;
+    const opciones = (tipo) =>
+      rutas.rutas
+        .filter((r) => (r.tipo === 'propuesta') === (tipo === 'propuesta'))
+        .map((r) => `<option value="${escapar(r.id)}">${escapar(r.nombre)}</option>`)
+        .join('');
+    $('ruta').innerHTML =
+      `<optgroup label="${escapar(t('grupoActuales'))}">${opciones('actual')}</optgroup>` +
+      `<optgroup label="${escapar(t('grupoPropuestas'))}">${opciones('propuesta')}</optgroup>`;
+    if (elegida) $('ruta').value = elegida;
+  }
+  llenarSelectorRutas();
+
+  /** Aviso de ruta propuesta: no oficial, en qué se basa, quién la operaría y cuándo. */
+  function mostrarAviso() {
+    $('aviso').hidden = !ruta.propuesta;
+    $('lgProp').hidden = !ruta.paradas.some((p) => p.propuesta);
+    if (!ruta.propuesta) return;
+    const l = getIdioma();
+    $('aviso').style.setProperty('--ruta', ruta.color);
+    $('avBase').textContent = ruta.seBasaEn[l] || ruta.seBasaEn.es;
+    $('avOpera').textContent = ruta.opera[l] || ruta.opera.es;
+    $('avCuando').textContent = ruta.cuando[l] || ruta.cuando.es;
+  }
 
   // 3. Simulador, mapa y estado de la interfaz
-  let ruta = prepararRuta(rutas.rutas[0].id);
+  let ruta = prepararRuta(datosRutas['B01-A'] ? 'B01-A' : rutas.rutas[0].id); // la demo abre con el piloto aeropuerto → Portal de Soledad
   const sim = new Simulador(ruta);
   const mapa = new Mapa($('map'), mapaBase, lugares.lugares);
   const ui = { idioma: getIdioma(), rotar: true, claveLetrero: '' }; // ui.idioma = idioma del letrero
@@ -49,7 +75,7 @@ async function iniciar() {
     const clave = [estado.indice, estado.enEstacion, ui.idioma, ruta.id, [...elegidos].join()].join('|');
     if (clave !== ui.claveLetrero) {
       ui.claveLetrero = clave;
-      mostrarLetrero(estado, ruta, { idioma: ui.idioma, elegidos });
+      mostrarLetrero(estado, ruta, { idioma: ui.idioma, elegidos, corredores: corredoresDatos.corredores });
     }
   }
   sim.onCambio = refrescar;
@@ -60,6 +86,8 @@ async function iniciar() {
     mostrarListaHoteles(ruta, elegidos);
     $('lgR').style.background = ruta.color;
     $('lgRt').textContent = t('lgRuta', { r: ruta.id });
+    $('ruta').value = ruta.id;
+    mostrarAviso();
     sim.cambiarRuta(ruta);
   }
   cargarRuta(ruta.id);
@@ -157,6 +185,8 @@ async function iniciar() {
     mostrarListaHoteles(ruta, elegidos);
     $('lgRt').textContent = t('lgRuta', { r: ruta.id });
     mostrarMejoras();
+    llenarSelectorRutas();
+    mostrarAviso();
     setIdiomaLetrero(e.target.value); // el letrero también cambia; la rotación sigue si está activa
   };
 

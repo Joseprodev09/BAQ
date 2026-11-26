@@ -4,7 +4,7 @@
  *
  * No depende del navegador, así que se puede probar con Node (ver tests/).
  */
-import { LIMITE_SOLEDAD_LAT } from './config.js';
+import { LIMITE_SOLEDAD_LAT, LIMITE_PUERTO_COLOMBIA_LON } from './config.js';
 import { CONECTORES } from './textos-ui.js';
 
 // Punto de referencia en el centro del área (cerca de la Av. Murillo).
@@ -32,8 +32,12 @@ export function formatoKm(metros, idioma = 'es') {
   return (idioma === 'en' ? texto : texto.replace('.', ',')) + ' km';
 }
 
-/** Municipio según la latitud sobre el corredor de la Av. Murillo. */
-export function municipio(lat) {
+/**
+ * Municipio aproximado del punto: al sur del límite de la Av. Murillo es Soledad;
+ * al oeste de LIMITE_PUERTO_COLOMBIA_LON (ruta B04) es Puerto Colombia.
+ */
+export function municipio(lat, lon = -74.8) {
+  if (lon < LIMITE_PUERTO_COLOMBIA_LON) return 'Puerto Colombia';
   return lat < LIMITE_SOLEDAD_LAT ? 'Soledad' : 'Barranquilla';
 }
 
@@ -53,7 +57,8 @@ export function describirDireccion({ via, cruce }, idioma = 'es') {
   if (CORREDORES.includes(secundaria) && !CORREDORES.includes(principal)) {
     [principal, secundaria] = [secundaria, principal];
   }
-  const nombre = NOMBRE_VISIBLE[principal] || principal;
+  const nombre = NOMBRE_VISIBLE[principal] || principal || '—';
+  if (!secundaria) return nombre; // tramos sin cruce conocido (carreteras)
   const esCalle = /^(Calle|Carrera|Avenida|Vía|Diagonal|Transversal)/.test(secundaria);
   return nombre + (esCalle ? c.con : c.altura) + secundaria;
 }

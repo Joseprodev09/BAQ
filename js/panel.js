@@ -30,6 +30,15 @@ export function mostrarPanel(estado, ruta, simulador) {
     ? t('faltan', { e: ruta.paradas[n.estacion].nombre, km: km(estado.metrosHastaSiguienteHotel), m: n.minutos })
     : '—';
 
+  // Punto para comprar o recargar la tarjeta
+  const c = estado.tarjetaAqui || estado.tarjetaSiguiente;
+  const motivo = c ? c.tarjeta.motivo[getIdioma()] || c.tarjeta.motivo.es : '';
+  const marca = c && c.tarjeta.estado === 'propuesto' ? ' · ' + t('tarjetaPropuesta') : '';
+  $('cNext').textContent = c ? c.nombre + marca : t('sinTarjeta');
+  $('cNext2').textContent = c
+    ? (estado.tarjetaAqui ? t('tarjetaAqui') : t('tarjetaFaltan', { km: km(estado.metrosHastaTarjeta) })) + ' · ' + motivo
+    : '—';
+
   // Progreso
   $('pA').textContent = t('deTotal', { a: km(estado.s), b: km(ruta.total) });
   const min = Math.floor(simulador.tiempo / 60);

@@ -24,6 +24,10 @@ export function calcularEstado(ruta, s, elegidos, idioma = 'es') {
   const hotelActual = yaPasados[yaPasados.length - 1] || null;
   const hotelSiguiente = hoteles.find((h) => ruta.paradas[h.estacion].s > s + 1) || null;
 
+  // Puntos para comprar o recargar la tarjeta (existentes y propuestos).
+  const tarjetaAqui = enEstacion && actual.tarjeta ? actual : null;
+  const tarjetaSiguiente = ruta.puntosTarjeta.find((p) => p.s > s + 1) || null;
+
   return {
     s,
     xy,
@@ -33,10 +37,13 @@ export function calcularEstado(ruta, s, elegidos, idioma = 'es') {
     enEstacion,
     punto,
     direccion: describirDireccion(punto, idioma),
-    municipio: municipio(punto.lat),
+    municipio: municipio(punto.lat, punto.lon),
     hotelActual,
     hotelSiguiente,
     hayHotelesElegidos: hoteles.length > 0,
+    tarjetaAqui,
+    tarjetaSiguiente,
+    metrosHastaTarjeta: tarjetaSiguiente ? tarjetaSiguiente.s - s : 0,
     metrosHastaSiguienteHotel: hotelSiguiente ? ruta.paradas[hotelSiguiente.estacion].s - s : 0,
   };
 }

@@ -11,6 +11,9 @@ export const VELOCIDAD_KMH = 22;
 /** Segundos que el bus se detiene en cada estación en un día normal. */
 export const PARADA_SEGUNDOS = 20;
 
+/** Segundos que el bus espera en una parada con punto de tarjeta (supuesto: tiempo para comprar o recargar). */
+export const PARADA_TARJETA_SEGUNDOS = 45;
+
 /** Multiplicador de tiempo con el que arranca el modo automático. */
 export const VELOCIDAD_INICIAL = 30;
 
@@ -28,6 +31,9 @@ export const CAMINATA_MAXIMA_METROS = 1100;
 
 /** Latitud aproximada del límite Soledad / Barranquilla sobre la Av. Murillo (Av. Circunvalar). */
 export const LIMITE_SOLEDAD_LAT = 10.9235;
+
+/** Longitud aproximada a partir de la cual (hacia el oeste) se está en Puerto Colombia. */
+export const LIMITE_PUERTO_COLOMBIA_LON = -74.875;
 
 /** Ancho, en metros, de la vista cuando la cámara sigue al bus. */
 export const ZOOM_SEGUIR_METROS = 2600;

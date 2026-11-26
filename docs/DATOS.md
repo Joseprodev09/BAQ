@@ -66,3 +66,12 @@ El script usa la API pública Overpass. Si un servidor está caído, prueba otro
 ## Licencia de los datos
 
 Los datos de OpenStreetMap están bajo la licencia ODbL. Si publicas el simulador, mantén visible el crédito «© colaboradores de OpenStreetMap», como ya aparece debajo del mapa.
+
+
+## Rutas propuestas: cómo se trazan y qué son los puntos de tarjeta
+
+- `npm run rutas` (`scripts/trazar-propuestas.mjs`) calcula, sin red, el trazado de las rutas propuestas sobre un grafo vial (`scripts/red-vial.mjs`): avenidas del mapa base, R1/B1 y las calles locales congeladas en `data/calles-locales.json`. Prefiere troncales y primarias, elimina bucles y vueltas de manzana, y deja el recorrido pegado a las vías reales. Es determinista: ejecutarlo dos veces da el mismo resultado.
+- El trazado es una aproximación; debe validarse con el Área Metropolitana de Barranquilla (AMB). No son rutas oficiales.
+- Paradas de hotel (`hp-*`, `generada: true`): se agrupan hoteles de OSM a menos de ~300 m del corredor. Un hotel se asigna a la parada más cercana a pie (máx. 1100 m).
+- Puntos de tarjeta (`tarjeta.estado`): `existente` = taquilla o Punto de Atención al Cliente documentado (Portal de Soledad, Joe Arroyo); `propuesto` = quiosco de compra/recarga sugerido en aeropuerto, hoteles y zonas de llegada. Los propuestos NO existen hoy. Recarga externa existente: convenio SuperGIROS (El Heraldo, julio 2024).
+- Tarifa 2026: $3.700 (lun–sáb) y $3.800 (dom y festivos), vigente desde el 19 de enero de 2026 (El Espectador, 16 ene 2026).

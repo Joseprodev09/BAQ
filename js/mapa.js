@@ -56,6 +56,10 @@ export class Mapa {
   dibujarBase(mapaBase) {
     for (const via of mapaBase.vias) {
       const d = ruta2path(via.puntos.map(([lat, lon]) => aMetros(lat, lon)));
+      if (via.tipo === 'costa') {
+        crear('path', { ...trazo, d, stroke: 'var(--water)', 'stroke-width': 4 }, this.capas.base);
+        continue;
+      }
       if (via.tipo === 'rio') {
         crear('path', { ...trazo, d, stroke: 'var(--water)', 'stroke-width': 14 }, this.capas.base);
         continue;
@@ -88,9 +92,11 @@ export class Mapa {
         {
           cx: p.xy[0],
           cy: p.xy[1],
-          fill: '#fff',
+          fill: p.tarjeta ? '#0b7285' : '#fff',
           stroke: '#17202a',
           'stroke-width': 2.5,
+          // Paradas propuestas (no existen hoy): borde punteado.
+          ...(p.propuesta ? { 'stroke-dasharray': '3 2' } : {}),
           'vector-effect': 'non-scaling-stroke',
         },
         estaciones,
@@ -290,7 +296,9 @@ export class Mapa {
     ruta.paradas.forEach((p, i) => {
       const clave = i === 0 || i === ruta.paradas.length - 1 || i === estado.indice || i === estado.indice + 1;
       if (!todas && !clave) return;
-      const derecha = p.xy[1] > -2500; // en la Av. Olaya Herrera las etiquetas van a la izquierda
+      // Cada estación puede fijar su lado en estaciones.json ("etiqueta"); si no,
+      // en la Av. Olaya Herrera las etiquetas van a la izquierda.
+      const derecha = p.etiqueta ? p.etiqueta === 'derecha' : p.xy[1] > -2500;
       texto(p.xy[0] + (derecha ? 10 : -10) * u, p.xy[1] + 4 * u, p.nombre, {
         'text-anchor': derecha ? 'start' : 'end',
         fill: 'var(--ink)',

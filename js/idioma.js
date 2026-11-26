@@ -48,6 +48,7 @@ export function aplicarTextos() {
   document.querySelectorAll('[data-i18n-aria]').forEach((el) => el.setAttribute('aria-label', t(el.dataset.i18nAria)));
   // Solo textos propios de js/textos-ui.js (con enlaces o <code>), nunca datos externos.
   document.querySelectorAll('[data-i18n-html]').forEach((el) => (el.innerHTML = t(el.dataset.i18nHtml)));
+  document.dispatchEvent(new Event('idioma-cambiado'));
   const lista = document.getElementById('fuentes');
   if (lista)
     lista.innerHTML = t('fuentes')

@@ -5,7 +5,10 @@
  * Modo automático: el bus avanza solo, se detiene en cada estación y sigue.
  * Modo manual: la posición la decide el usuario (barra, botones o teclado).
  */
-import { VELOCIDAD_KMH, VELOCIDAD_INICIAL, PARADA_SEGUNDOS } from './config.js';
+import { VELOCIDAD_KMH, VELOCIDAD_INICIAL, PARADA_SEGUNDOS, PARADA_TARJETA_SEGUNDOS } from './config.js';
+
+/** Segundos de parada: más larga donde se compra o recarga la tarjeta. */
+const segundosDeParada = (parada) => (parada.tarjeta ? PARADA_TARJETA_SEGUNDOS : PARADA_SEGUNDOS);
 
 export class Simulador {
   constructor(ruta) {
@@ -58,7 +61,7 @@ export class Simulador {
       if (proxima && this.s >= proxima.s - 0.5) {
         this.s = proxima.s;
         const esUltima = proxima === this.ruta.paradas[this.ruta.paradas.length - 1];
-        this.espera = esUltima ? 0 : PARADA_SEGUNDOS;
+        this.espera = esUltima ? 0 : segundosDeParada(proxima);
       }
     }
     if (this.terminado) this.reproduciendo = false;

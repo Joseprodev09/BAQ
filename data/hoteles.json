@@ -100,6 +100,90 @@
    "lon": -74.81095,
    "direccion": "Calle 75",
    "porDefecto": false
+  },
+  {
+   "nombre": "Hotel Dann Carlton Barranquilla",
+   "lat": 11.01279,
+   "lon": -74.82679,
+   "porDefecto": true
+  },
+  {
+   "nombre": "Movich Buró 51",
+   "lat": 11.01024,
+   "lon": -74.82546,
+   "porDefecto": false
+  },
+  {
+   "nombre": "Crowne Plaza Barranquilla",
+   "lat": 11.01657,
+   "lon": -74.82755,
+   "porDefecto": false
+  },
+  {
+   "nombre": "Hilton Garden Inn Barranquilla",
+   "lat": 11.01595,
+   "lon": -74.83152,
+   "porDefecto": true
+  },
+  {
+   "nombre": "GHL Hotel Barranquilla",
+   "lat": 11.0135,
+   "lon": -74.83677,
+   "porDefecto": false
+  },
+  {
+   "nombre": "Holiday Inn Express Barranquilla Buenavista",
+   "lat": 11.01935,
+   "lon": -74.83613,
+   "porDefecto": false
+  },
+  {
+   "nombre": "Park Inn by Radisson Barranquilla",
+   "lat": 11.00325,
+   "lon": -74.82095,
+   "porDefecto": true
+  },
+  {
+   "nombre": "Wyndham Garden Barranquilla",
+   "lat": 11.00395,
+   "lon": -74.82208,
+   "porDefecto": false
+  },
+  {
+   "nombre": "Hotel Continental Plaza",
+   "lat": 11.00223,
+   "lon": -74.82242,
+   "porDefecto": false
+  },
+  {
+   "nombre": "NH Collection Barranquilla Royal",
+   "lat": 11.00424,
+   "lon": -74.81285,
+   "porDefecto": false
+  },
+  {
+   "nombre": "Estelar Alto Prado",
+   "lat": 11.00504,
+   "lon": -74.80324,
+   "porDefecto": false
+  },
+  {
+   "nombre": "Hotel El Prado",
+   "lat": 10.99916,
+   "lon": -74.80031,
+   "porDefecto": true
+  },
+  {
+   "nombre": "Barranquilla Plaza Hotel",
+   "lat": 11.00368,
+   "lon": -74.81123,
+   "porDefecto": false
+  },
+  {
+   "nombre": "Hotel Portal del Río",
+   "lat": 11.02488,
+   "lon": -74.80219,
+   "porDefecto": true
   }
  ]
 }

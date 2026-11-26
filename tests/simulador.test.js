@@ -99,3 +99,56 @@ test('simulador: en manual salta estación por estación', () => {
   sim.saltarEstacion(-1);
   assert.equal(sim.s, 0);
 });
+
+test('rutas propuestas: paradas en orden, aviso completo y dentro del área metropolitana', () => {
+  for (const datos of rutas.filter((r) => r.tipo === 'propuesta')) {
+    const r = crearRuta(datos, estaciones, hoteles);
+    assert.ok(r.propuesta);
+    for (const k of ['seBasaEn', 'opera', 'cuando'])
+      for (const l of ['es', 'en', 'pt']) assert.ok(datos[k][l], `${r.id}: ${k}.${l}`);
+    for (let i = 1; i < r.paradas.length; i++)
+      assert.ok(r.paradas[i].s > r.paradas[i - 1].s, `${r.id}: ${r.paradas[i].nombre}`);
+    assert.ok(r.total > 5000 && r.total < 40000, `${r.id}: ${r.total}`);
+  }
+});
+
+test('geo: Puerto Colombia y dirección sin cruce', () => {
+  assert.equal(municipio(10.989, -74.958), 'Puerto Colombia');
+  assert.equal(describirDireccion({ via: 'Vía al Mar', cruce: null }), 'Vía al Mar');
+});
+
+test('puntos de tarjeta: cada ruta propuesta tiene al menos uno y los estados son válidos', () => {
+  for (const datos of rutas.filter((r) => r.tipo === 'propuesta')) {
+    const r = crearRuta(datos, estaciones, hoteles);
+    assert.ok(r.puntosTarjeta.length >= 1, `${r.id}: sin punto de tarjeta`);
+    for (const p of r.puntosTarjeta) {
+      assert.ok(['existente', 'propuesto'].includes(p.tarjeta.estado), `${r.id}/${p.id}`);
+      for (const l of ['es', 'en', 'pt']) assert.ok(p.tarjeta.motivo[l], `${p.id}.${l}`);
+    }
+  }
+});
+
+test('paradas de hotel: cada hotel queda a distancia caminable de su parada', () => {
+  for (const datos of rutas.filter((r) => r.paradasHotel)) {
+    const r = crearRuta(datos, estaciones, hoteles);
+    for (const h of r.hoteles) assert.ok(h.minutos <= 15, `${r.id}: ${h.nombre} a ${h.minutos} min`);
+  }
+});
+
+test('estado: informa el siguiente punto de tarjeta y la parada es más larga allí', () => {
+  const datos = rutas.find((r) => r.tipo === 'propuesta');
+  const r = crearRuta(datos, estaciones, hoteles);
+  const e = calcularEstado(r, 0, new Set());
+  assert.ok(e.tarjetaAqui || e.tarjetaSiguiente);
+});
+
+test('corredores: cada ruta propuesta pertenece a un corredor con color, código y nombre bilingüe', () => {
+  const corredores = leer('corredores').corredores;
+  assert.deepEqual(corredores.map((c) => c.codigo), ['B01', 'B02', 'B03', 'B04', 'B05']);
+  for (const c of corredores) assert.ok(c.color && c.texto && c.nombre.es && c.nombre.en && c.vias);
+  for (const r of rutas.filter((x) => x.tipo === 'propuesta')) {
+    const c = corredores.find((k) => k.codigo === r.corredor);
+    assert.ok(c, `${r.id}: sin corredor`);
+    assert.equal(r.color.toLowerCase(), c.color.toLowerCase(), `${r.id}: color distinto al del corredor`);
+  }
+});

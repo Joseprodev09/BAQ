@@ -22,10 +22,13 @@ export function crearRuta(datosRuta, estaciones, hoteles) {
   }
   const total = acumulado[acumulado.length - 1];
 
-  // Proyecta un punto cualquiera sobre el trazado y devuelve su "s".
-  function proyectar(xy) {
-    let mejor = { d: Infinity, s: 0 };
+  // Proyecta un punto sobre el trazado y devuelve su "s". Con "desde" solo busca
+  // más adelante de esa distancia (necesario en circuitos que pasan dos veces
+  // por la misma calle, como la ruta B03).
+  function proyectar(xy, desde = 0) {
+    let mejor = { d: Infinity, s: desde };
     for (let i = 1; i < puntos.length; i++) {
+      if (acumulado[i] < desde) continue;
       const a = puntos[i - 1].xy;
       const b = puntos[i].xy;
       const dx = b[0] - a[0];
@@ -33,20 +36,23 @@ export function crearRuta(datosRuta, estaciones, hoteles) {
       let t = ((xy[0] - a[0]) * dx + (xy[1] - a[1]) * dy) / (dx * dx + dy * dy || 1);
       t = Math.max(0, Math.min(1, t));
       const d = distancia([a[0] + t * dx, a[1] + t * dy], xy);
-      if (d < mejor.d) mejor = { d, s: acumulado[i - 1] + t * (acumulado[i] - acumulado[i - 1]) };
+      const s = acumulado[i - 1] + t * (acumulado[i] - acumulado[i - 1]);
+      if (d < mejor.d && s >= desde) mejor = { d, s };
     }
     return mejor.s;
   }
 
   // 2. Estaciones en el orden de la ruta, con su posición "s".
   const porId = Object.fromEntries(estaciones.map((e) => [e.id, e]));
+  let anterior = 0;
   const paradas = datosRuta.estaciones.map((id, i, lista) => {
     const e = porId[id];
     if (!e) throw new Error(`La estación "${id}" de la ruta ${datosRuta.id} no existe en estaciones.json`);
     const xy = aMetros(e.lat, e.lon);
-    let s = proyectar(xy);
+    let s = proyectar(xy, anterior);
     if (i === 0) s = 0; // la primera estación es el inicio
     if (i === lista.length - 1) s = total; // la última es el final
+    anterior = s;
     return { ...e, xy, s };
   });
 
@@ -96,9 +102,15 @@ export function crearRuta(datosRuta, estaciones, hoteles) {
     nombre: datosRuta.nombre,
     destino: datosRuta.destino,
     color: datosRuta.color,
+    corredor: datosRuta.corredor || null,
+    propuesta: datosRuta.tipo === 'propuesta',
+    seBasaEn: datosRuta.seBasaEn,
+    opera: datosRuta.opera,
+    cuando: datosRuta.cuando,
     puntos,
     total,
     paradas,
+    puntosTarjeta: paradas.filter((p) => p.tarjeta),
     hoteles: hotelesRuta,
     posicionEn,
     estacionAlcanzada,

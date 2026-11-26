@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Simulador del recorrido de las rutas troncales R1 y B1 de Transmetro en Barranquilla, con hoteles cercanos y señalización para turistas."
+      content="Barranquilla 360: propuesta de valor para preparar la ciudad ante grandes eventos (BAQ Routes, BAQ Points y BAQ Connect), con simulador de corredores, señalización y puntos para conseguir el BAQ Pass."
     />
     <title>BAQ360 · Simulador Transmetro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,9 +73,32 @@
       </div>
     </header>
 
+    <section class="band p-sec" id="p-dx"></section>
+    <section class="band p-sec p-alt" id="p-pilares"></section>
+    <section class="band p-sec" id="p-routes"></section>
+
     <div class="band ctl selector-ruta">
       <label class="lbl" for="ruta" style="margin: 0" data-i18n="ruta"></label>
       <select id="ruta"></select>
+      <aside class="aviso-propuesta" id="aviso" hidden>
+        <p>
+          <strong class="etiqueta-propuesta" data-i18n="avisoEtiqueta"></strong> <span data-i18n="avisoTexto"></span>
+        </p>
+        <dl>
+          <div>
+            <dt data-i18n="seBasaEn"></dt>
+            <dd id="avBase"></dd>
+          </div>
+          <div>
+            <dt data-i18n="opera"></dt>
+            <dd id="avOpera"></dd>
+          </div>
+          <div>
+            <dt data-i18n="cuando"></dt>
+            <dd id="avCuando"></dd>
+          </div>
+        </dl>
+      </aside>
     </div>
 
     <section class="band app">
@@ -93,6 +116,9 @@
           <span><i id="lgR" style="background: var(--r1)"></i><span id="lgRt"></span></span
           ><span><i style="background: #fff; border: 2px solid #17202a"></i><span data-i18n="lgEstacion"></span></span
           ><span><i style="background: #3b5bdb"></i><span data-i18n="lgHotel"></span></span
+          ><span id="lgProp" hidden
+            ><i style="background: #fff; border: 2px dashed #17202a"></i><span data-i18n="lgPropuesta"></span></span
+          ><span><i style="background: #0b7285"></i><span data-i18n="lgTarjeta"></span></span
           ><span><i style="background: var(--warn)"></i><span data-i18n="lgSiguiente"></span></span
           ><span><i style="background: #2e7d4f"></i><span data-i18n="lgVisitado"></span></span
           ><span data-i18n="lgDatos"></span>
@@ -121,6 +147,16 @@
               <p class="lbl" data-i18n="siguienteHotel"></p>
               <div class="big" id="hNext">—</div>
               <div class="sub" id="hNext2">—</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="hrow">
+            <div class="hicon card-ico">▭</div>
+            <div>
+              <p class="lbl" data-i18n="puntoTarjeta"></p>
+              <div class="big" id="cNext">—</div>
+              <div class="sub" id="cNext2">—</div>
             </div>
           </div>
         </div>
@@ -164,12 +200,18 @@
     <section class="band" style="padding-top: 0">
       <h2 data-i18n="senalTitulo"></h2>
       <div class="sign" id="sign">
+        <div class="sg-main">
+          <div class="sg-head" id="sHead"><span class="badge" id="sBadge">R1</span><span id="sName"></span></div>
+          <p class="sg-dest" id="sDest"></p>
+          <ul class="sg-rows" id="sRows"></ul>
+          <p class="sg-nota" data-i18n="senalNota"></p>
+        </div>
         <div>
-          <div class="route"><span class="badge" id="sBadge">R1</span><span id="sDest"></span></div>
           <div class="k" id="sK"></div>
           <div class="st" id="sSt">—</div>
           <div class="k" id="sK2" style="margin-top: 10px"></div>
           <div style="font-size: 18px" id="sDir">—</div>
+          <ul id="sList" style="margin-top: 14px"></ul>
           <div class="langs" role="group" data-i18n-aria="letreroAria">
             <button class="chip" data-l="es" aria-pressed="true">Español</button>
             <button class="chip" data-l="en" aria-pressed="false">English</button>
@@ -177,10 +219,37 @@
             <button class="chip" id="rot" aria-pressed="true" data-i18n="rotar"></button>
           </div>
         </div>
-        <ul id="sList"></ul>
       </div>
       <p class="note" data-i18n="notaLetrero"></p>
     </section>
+
+    <section class="band p-sec" id="p-points"></section>
+
+    <section class="band pass" aria-labelledby="passTitulo">
+      <div class="pass-cab">
+        <p class="pass-etq" data-i18n="passEtiqueta"></p>
+        <h2 id="passTitulo" data-i18n="passTitulo"></h2>
+        <p class="pass-lead" data-i18n="passLead"></p>
+      </div>
+      <ol class="pass-pasos">
+        <li><span class="n">1</span><h3 data-i18n="passP1T"></h3><p data-i18n="passP1"></p></li>
+        <li><span class="n">2</span><h3 data-i18n="passP2T"></h3><p data-i18n="passP2"></p></li>
+        <li><span class="n">3</span><h3 data-i18n="passP3T"></h3><p data-i18n="passP3"></p></li>
+      </ol>
+      <div class="pass-donde">
+        <h3 data-i18n="passDondeT"></h3>
+        <ul>
+          <li><strong data-i18n="passL1T"></strong><span data-i18n="passL1"></span></li>
+          <li><strong data-i18n="passL2T"></strong><span data-i18n="passL2"></span></li>
+          <li><strong data-i18n="passL3T"></strong><span data-i18n="passL3"></span></li>
+        </ul>
+      </div>
+      <p class="pass-hoy" data-i18n="passHoy"></p>
+      <p class="pass-aviso" data-i18n="passAviso"></p>
+    </section>
+
+    <section class="band p-sec" id="p-connect"></section>
+    <section class="band p-sec p-alt" id="p-flujo"></section>
 
     <section class="band" style="padding-top: 0">
       <h2 data-i18n="mejorasTitulo"></h2>
@@ -192,6 +261,8 @@
       <!-- Los textos de las fuentes (con sus enlaces) están en js/textos-ui.js -->
       <ul class="src" id="fuentes"></ul>
     </section>
+
+    <section class="band p-sec p-cierre" id="p-cierre"></section>
 
     <noscript
       ><p class="band">Este simulador necesita JavaScript activado. · This simulator needs JavaScript.</p></noscript

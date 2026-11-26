@@ -6,7 +6,16 @@
    "id": "ps",
    "nombre": "Portal de Soledad",
    "lat": 10.90742,
-   "lon": -74.8003
+   "lon": -74.8003,
+   "tarjeta": {
+    "estado": "existente",
+    "tipo": "taquilla",
+    "motivo": {
+     "es": "Taquilla del portal: compra y recarga de la tarjeta (El Heraldo, 2024).",
+     "en": "Portal ticket office: card purchase and top-up (El Heraldo, 2024).",
+     "pt": "Bilheteria do portal: compra e recarga do cartão (El Heraldo, 2024)."
+    }
+   }
   },
   {
    "id": "pg",
@@ -90,7 +99,16 @@
    "id": "ja",
    "nombre": "Joe Arroyo",
    "lat": 10.99467,
-   "lon": -74.80772
+   "lon": -74.80772,
+   "tarjeta": {
+    "estado": "existente",
+    "tipo": "pac",
+    "motivo": {
+     "es": "Taquilla y Punto de Atención al Cliente: aquí se personaliza la tarjeta y se traslada el saldo (El Heraldo, 2024 y 2025).",
+     "en": "Ticket office and Customer Service Point: this is where the card is personalised and its balance transferred (El Heraldo, 2024 and 2025).",
+     "pt": "Bilheteria e Ponto de Atendimento ao Cliente: aqui o cartão é personalizado e o saldo transferido (El Heraldo, 2024 e 2025)."
+    }
+   }
   },
   {
    "id": "bab",
@@ -103,6 +121,356 @@
    "nombre": "Parque Cultural del Caribe",
    "lat": 10.98592,
    "lon": -74.77844
+  },
+  {
+   "id": "aer",
+   "nombre": "Aeropuerto Ernesto Cortissoz",
+   "lat": 10.88635,
+   "lon": -74.77613,
+   "propuesta": true,
+   "etiqueta": "derecha",
+   "tipo": "tarjeta",
+   "tarjeta": {
+    "estado": "propuesto",
+    "tipo": "quiosco",
+    "motivo": {
+     "es": "Primer contacto del visitante: llega sin tarjeta y en Transmetro no se paga en efectivo, así que la compra tiene que estar antes de subir al bus.",
+     "en": "The visitor’s first contact: they arrive without a card and Transmetro does not take cash, so the purchase has to happen before boarding.",
+     "pt": "Primeiro contato do visitante: chega sem cartão e o Transmetro não aceita dinheiro, então a compra precisa ser antes de embarcar."
+    }
+   }
+  },
+  {
+   "id": "ccc",
+   "nombre": "C. C. Carnaval (Av. El Platanal)",
+   "lat": 10.90559,
+   "lon": -74.774,
+   "propuesta": true,
+   "etiqueta": "derecha"
+  },
+  {
+   "id": "zhp",
+   "nombre": "Zona hotelera norte (Calle 86)",
+   "lat": 11.00259,
+   "lon": -74.82186,
+   "propuesta": true,
+   "etiqueta": "derecha",
+   "tipo": "tarjeta",
+   "tarjeta": {
+    "estado": "propuesto",
+    "tipo": "quiosco",
+    "motivo": {
+     "es": "Varios hoteles quedan a pocas cuadras: el huésped compra y recarga la tarjeta sin tener que ir hasta una estación troncal.",
+     "en": "Several hotels are a few blocks away: guests buy and top up the card without having to go to a trunk station.",
+     "pt": "Vários hotéis ficam a poucas quadras: o hóspede compra e recarrega o cartão sem ir até uma estação troncal."
+    }
+   }
+  },
+  {
+   "id": "bv",
+   "nombre": "C. C. Buenavista",
+   "lat": 11.01432,
+   "lon": -74.82716,
+   "propuesta": true,
+   "etiqueta": "derecha",
+   "tipo": "tarjeta",
+   "tarjeta": {
+    "estado": "propuesto",
+    "tipo": "quiosco",
+    "motivo": {
+     "es": "Centro comercial con otro grupo de hoteles alrededor; sirve a quienes se alojan al norte y a quienes compran allí.",
+     "en": "A shopping centre with another group of hotels around it; it serves guests staying in the north and shoppers.",
+     "pt": "Shopping com outro grupo de hotéis ao redor; atende quem se hospeda ao norte e quem faz compras ali."
+    }
+   }
+  },
+  {
+   "id": "pdc",
+   "nombre": "Gran Malecón · Pabellón de Cristal",
+   "lat": 11.0155,
+   "lon": -74.7893,
+   "propuesta": true,
+   "etiqueta": "derecha",
+   "tipo": "tarjeta",
+   "tarjeta": {
+    "estado": "propuesto",
+    "tipo": "quiosco",
+    "motivo": {
+     "es": "Atractivo del Gran Malecón, lejos de las estaciones troncales: el turista no tiene dónde conseguir la tarjeta cerca.",
+     "en": "A Gran Malecón attraction far from the trunk stations: tourists have nowhere nearby to get the card.",
+     "pt": "Atração do Gran Malecón, longe das estações troncais: o turista não tem onde conseguir o cartão por perto."
+    }
+   }
+  },
+  {
+   "id": "pdo",
+   "nombre": "Gran Malecón · Puerta de Oro",
+   "lat": 11.02293,
+   "lon": -74.80078,
+   "propuesta": true,
+   "etiqueta": "derecha"
+  },
+  {
+   "id": "vdc",
+   "nombre": "Ventana de Campeones",
+   "lat": 10.9982,
+   "lon": -74.7724,
+   "propuesta": true,
+   "etiqueta": "derecha"
+  },
+  {
+   "id": "adu",
+   "nombre": "Antigua Aduana",
+   "lat": 10.98923,
+   "lon": -74.77867,
+   "propuesta": true,
+   "etiqueta": "derecha",
+   "tipo": "tarjeta",
+   "tarjeta": {
+    "estado": "propuesto",
+    "tipo": "quiosco",
+    "motivo": {
+     "es": "Centro histórico, a pocas cuadras de la estación Parque Cultural del Caribe: punto para quien recorre el centro a pie y luego toma el bus.",
+     "en": "Historic centre, a few blocks from Parque Cultural del Caribe station: a point for visitors who walk the centre and then take the bus.",
+     "pt": "Centro histórico, a poucas quadras da estação Parque Cultural do Caribe: ponto para quem percorre o centro a pé e depois pega o ônibus."
+    }
+   }
+  },
+  {
+   "id": "mdc",
+   "nombre": "Museo del Carnaval (Barrio Abajo)",
+   "lat": 10.99303,
+   "lon": -74.7877,
+   "propuesta": true,
+   "etiqueta": "izquierda"
+  },
+  {
+   "id": "vam",
+   "nombre": "Ventana al Mundo",
+   "lat": 11.033,
+   "lon": -74.83107,
+   "propuesta": true,
+   "etiqueta": "derecha"
+  },
+  {
+   "id": "eco",
+   "nombre": "Ecoparque Ciénaga de Mallorquín",
+   "lat": 11.03116,
+   "lon": -74.84511,
+   "propuesta": true,
+   "etiqueta": "izquierda"
+  },
+  {
+   "id": "pco",
+   "nombre": "Puerto Colombia · Muelle",
+   "lat": 10.98934,
+   "lon": -74.95864,
+   "propuesta": true,
+   "etiqueta": "derecha",
+   "tipo": "tarjeta",
+   "tarjeta": {
+    "estado": "propuesto",
+    "tipo": "quiosco",
+    "motivo": {
+     "es": "Puerto Colombia queda fuera de las estaciones troncales: es el lugar para comprar o recargar antes de volver al sistema.",
+     "en": "Puerto Colombia is outside the trunk stations: the place to buy or top up before returning to the system.",
+     "pt": "Puerto Colombia fica fora das estações troncais: o lugar para comprar ou recarregar antes de voltar ao sistema."
+    }
+   }
+  },
+  {
+   "id": "met",
+   "nombre": "Estadio Metropolitano",
+   "lat": 10.92707,
+   "lon": -74.79926,
+   "propuesta": true,
+   "etiqueta": "izquierda",
+   "tipo": "tarjeta",
+   "tarjeta": {
+    "estado": "propuesto",
+    "tipo": "quiosco",
+    "motivo": {
+     "es": "Día de partido: comprar o recargar en el estadio evita que miles de personas hagan fila a la vez en las taquillas de las estaciones cercanas.",
+     "en": "Match day: buying or topping up at the stadium keeps thousands of people from queuing at the nearby stations’ ticket offices at once.",
+     "pt": "Dia de jogo: comprar ou recarregar no estádio evita que milhares de pessoas façam fila ao mesmo tempo nas bilheterias das estações próximas."
+    }
+   }
+  },
+  {
+   "id": "pyr",
+   "nombre": "Park & Ride Circunvalar–Cordialidad",
+   "lat": 10.94328,
+   "lon": -74.83368,
+   "propuesta": true,
+   "etiqueta": "izquierda",
+   "tipo": "tarjeta",
+   "tarjeta": {
+    "estado": "propuesto",
+    "tipo": "quiosco",
+    "motivo": {
+     "es": "Entrada por la autopista de La Cordialidad: quien llega en carro o bus deja el vehículo y compra la tarjeta antes de subir a la lanzadera.",
+     "en": "Entry from the Cordialidad highway: visitors arriving by car or coach leave the vehicle and buy the card before boarding the shuttle.",
+     "pt": "Entrada pela rodovia da Cordialidad: quem chega de carro ou ônibus deixa o veículo e compra o cartão antes de embarcar na lançadeira."
+    }
+   }
+  },
+  {
+   "id": "hp-b01-a-1",
+   "nombre": "Hotel Samaritano",
+   "lat": 10.90884,
+   "lon": -74.79543,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Hotel Samaritano"
+   ]
+  },
+  {
+   "id": "hp-b01-n-1",
+   "nombre": "Hotel San Nicolás Colonial",
+   "lat": 10.98026,
+   "lon": -74.7756,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Hotel San Nicolás Colonial"
+   ]
+  },
+  {
+   "id": "hp-b01-n-2",
+   "nombre": "Hotel Casa Boston + 1",
+   "lat": 10.98965,
+   "lon": -74.79288,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Hotel Casa Boston",
+    "Hotel Majestic"
+   ]
+  },
+  {
+   "id": "hp-b01-n-3",
+   "nombre": "Villa Dilia Hotel",
+   "lat": 10.99243,
+   "lon": -74.80195,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Villa Dilia Hotel"
+   ]
+  },
+  {
+   "id": "hp-b01-n-4",
+   "nombre": "Hotel Tarento",
+   "lat": 10.99622,
+   "lon": -74.80921,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Hotel Tarento"
+   ]
+  },
+  {
+   "id": "hp-b01-n-5",
+   "nombre": "Movich Buró 51",
+   "lat": 11.00996,
+   "lon": -74.82495,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Movich Buró 51"
+   ]
+  },
+  {
+   "id": "hp-b02-n-1",
+   "nombre": "Movich Buró 51",
+   "lat": 11.00996,
+   "lon": -74.82495,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Movich Buró 51"
+   ]
+  },
+  {
+   "id": "hp-b02-n-2",
+   "nombre": "Hilton Garden Inn Barranquilla",
+   "lat": 11.01574,
+   "lon": -74.83166,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Hilton Garden Inn Barranquilla"
+   ]
+  },
+  {
+   "id": "hp-b02-n-3",
+   "nombre": "Holiday Inn Express Barranquilla Buenavista",
+   "lat": 11.01865,
+   "lon": -74.83656,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Holiday Inn Express Barranquilla Buenavista"
+   ]
+  },
+  {
+   "id": "hp-b02-n-4",
+   "nombre": "GHL Hotel Barranquilla",
+   "lat": 11.01444,
+   "lon": -74.83901,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "GHL Hotel Barranquilla"
+   ]
+  },
+  {
+   "id": "hp-b03-1",
+   "nombre": "Hotel El Prado",
+   "lat": 10.99961,
+   "lon": -74.80065,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Hotel El Prado"
+   ]
+  },
+  {
+   "id": "hp-b03-2",
+   "nombre": "Hotel Majestic",
+   "lat": 10.99274,
+   "lon": -74.79046,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Hotel Majestic"
+   ]
+  },
+  {
+   "id": "hp-b04-1",
+   "nombre": "Hotel Portal del Río",
+   "lat": 11.0247,
+   "lon": -74.80239,
+   "tipo": "hotel",
+   "propuesta": true,
+   "generada": true,
+   "hoteles": [
+    "Hotel Portal del Río"
+   ]
   }
- ]
+ ],
+ "nota": "Las estaciones con \"propuesta\": true son paradas de las rutas propuestas por BAQ 360; no existen hoy como estaciones de Transmetro."
 }
