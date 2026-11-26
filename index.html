@@ -11,258 +11,306 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Archivo:wght@600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="icon" type="image/png" href="assets/baq360.png" />
   </head>
   <body>
-    <header class="band top">
-      <div class="marca">
-        <img class="logo" src="assets/baq360.png" alt="BAQ360" width="150" height="85" />
-        <div>
-          <h1 data-i18n="titulo">Simulador de recorrido Transmetro · Barranquilla</h1>
-          <p data-i18n="intro"></p>
+    <a class="saltar" href="#contenido" data-i18n="saltar"></a>
+
+    <!-- Barra superior fija: marca, navegación y herramientas (tema e idioma) -->
+    <header class="barra">
+      <div class="barra-in">
+        <a class="marca" href="#inicio" aria-label="BAQ360">
+          <img class="logo" src="assets/baq360.png" alt="BAQ360" width="150" height="85" />
+        </a>
+        <nav class="nav" aria-label="Secciones">
+          <a href="#p-dx" data-i18n="navDesafio"></a>
+          <a href="#p-pilares" data-i18n="navPropuesta"></a>
+          <a href="#simulador" data-i18n="navSimulador"></a>
+          <a href="#pass" data-i18n="navPass"></a>
+          <a href="#p-connect" data-i18n="navGestion"></a>
+          <a href="#fuentes-sec" data-i18n="navFuentes"></a>
+        </nav>
+        <div class="herramientas">
+          <button class="chip icono" id="tema" type="button" aria-pressed="false">
+            <svg class="luna" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+            </svg>
+            <svg
+              class="sol"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            >
+              <circle cx="12" cy="12" r="4.5" />
+              <path
+                d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"
+              />
+            </svg>
+            <span id="temaTx"></span>
+          </button>
+          <label class="selector-idioma">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="9.5" />
+              <path d="M2.5 12h19M12 2.5c2.8 3 2.8 16 0 19M12 2.5c-2.8 3-2.8 16 0 19" />
+            </svg>
+            <span class="sr" data-i18n="idioma"></span>
+            <select id="idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+              <option value="pt">PT</option>
+            </select>
+          </label>
         </div>
-      </div>
-      <!-- Herramientas: modo oscuro e idioma (esquina superior derecha) -->
-      <div class="herramientas">
-        <button class="chip icono" id="tema" type="button" aria-pressed="false">
-          <svg class="luna" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
-          </svg>
-          <svg
-            class="sol"
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.2"
-            stroke-linecap="round"
-          >
-            <circle cx="12" cy="12" r="4.5" />
-            <path
-              d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"
-            />
-          </svg>
-          <span id="temaTx"></span>
-        </button>
-        <label class="selector-idioma">
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <circle cx="12" cy="12" r="9.5" />
-            <path d="M2.5 12h19M12 2.5c2.8 3 2.8 16 0 19M12 2.5c-2.8 3-2.8 16 0 19" />
-          </svg>
-          <span class="sr" data-i18n="idioma"></span>
-          <select id="idioma">
-            <option value="es">Español</option>
-            <option value="en">English</option>
-            <option value="pt">Português</option>
-          </select>
-        </label>
       </div>
     </header>
 
-    <section class="band p-sec" id="p-dx"></section>
-    <section class="band p-sec p-alt" id="p-pilares"></section>
-    <section class="band p-sec" id="p-routes"></section>
+    <main id="contenido">
+      <!-- Portada -->
+      <section class="band hero" id="inicio">
+        <p class="eyebrow" data-i18n="heroEtq"></p>
+        <h1 data-i18n="titulo"></h1>
+        <p class="hero-lead" data-i18n="intro"></p>
+        <div class="hero-ejes" aria-hidden="true">
+          <span class="eje-1">BAQ Routes</span><span class="eje-2">BAQ Points</span
+          ><span class="eje-3">BAQ Connect</span>
+        </div>
+      </section>
 
-    <div class="band ctl selector-ruta">
-      <label class="lbl" for="ruta" style="margin: 0" data-i18n="ruta"></label>
-      <select id="ruta"></select>
-      <aside class="aviso-propuesta" id="aviso" hidden>
-        <p>
-          <strong class="etiqueta-propuesta" data-i18n="avisoEtiqueta"></strong> <span data-i18n="avisoTexto"></span>
-        </p>
-        <dl>
-          <div>
-            <dt data-i18n="seBasaEn"></dt>
-            <dd id="avBase"></dd>
-          </div>
-          <div>
-            <dt data-i18n="opera"></dt>
-            <dd id="avOpera"></dd>
-          </div>
-          <div>
-            <dt data-i18n="cuando"></dt>
-            <dd id="avCuando"></dd>
-          </div>
-        </dl>
-      </aside>
-    </div>
+      <section class="band p-sec" id="p-dx"></section>
+      <section class="band p-sec p-alt" id="p-pilares"></section>
+      <section class="band p-sec" id="p-routes"></section>
 
-    <section class="band app">
-      <div>
-        <div class="mapbox">
-          <svg id="map" role="img" data-i18n-aria="mapaAria"></svg>
-          <div class="mapctl">
-            <button class="chip" id="cFollow" aria-pressed="true" data-i18n="seguir"></button>
-            <button class="chip" id="cAll" aria-pressed="false" data-i18n="verTodo"></button>
-            <button class="chip" id="zin" data-i18n-aria="acercar">+</button>
-            <button class="chip" id="zout" data-i18n-aria="alejar">−</button>
+      <!-- Simulador -->
+      <section class="band sim" id="simulador" aria-labelledby="simTitulo">
+        <div class="sim-cab">
+          <div>
+            <p class="p-etq" data-i18n="simEtq"></p>
+            <h2 id="simTitulo" data-i18n="simTitulo"></h2>
+          </div>
+          <div class="selector-ruta">
+            <label class="lbl" for="ruta" data-i18n="ruta"></label>
+            <select id="ruta"></select>
           </div>
         </div>
-        <div class="legend">
-          <span><i id="lgR" style="background: var(--r1)"></i><span id="lgRt"></span></span
-          ><span><i style="background: #fff; border: 2px solid #17202a"></i><span data-i18n="lgEstacion"></span></span
-          ><span><i style="background: #3b5bdb"></i><span data-i18n="lgHotel"></span></span
-          ><span id="lgProp" hidden
-            ><i style="background: #fff; border: 2px dashed #17202a"></i><span data-i18n="lgPropuesta"></span></span
-          ><span><i style="background: #0b7285"></i><span data-i18n="lgTarjeta"></span></span
-          ><span><i style="background: var(--warn)"></i><span data-i18n="lgSiguiente"></span></span
-          ><span><i style="background: #2e7d4f"></i><span data-i18n="lgVisitado"></span></span
-          ><span data-i18n="lgDatos"></span>
-        </div>
-      </div>
-      <aside class="side" aria-live="polite">
-        <div class="card">
-          <p class="lbl" data-i18n="dirActual"></p>
-          <div class="big" id="dir">—</div>
-          <div class="sub" id="dir2">—</div>
-        </div>
-        <div class="card">
-          <div class="hrow">
-            <div class="hicon done">✓</div>
+        <aside class="aviso-propuesta" id="aviso" hidden>
+          <p>
+            <strong class="etiqueta-propuesta" data-i18n="avisoEtiqueta"></strong> <span data-i18n="avisoTexto"></span>
+          </p>
+          <dl>
             <div>
-              <p class="lbl" data-i18n="hotelLlegaron"></p>
-              <div class="big" id="hNow">—</div>
-              <div class="sub" id="hNow2">—</div>
+              <dt data-i18n="seBasaEn"></dt>
+              <dd id="avBase"></dd>
+            </div>
+            <div>
+              <dt data-i18n="opera"></dt>
+              <dd id="avOpera"></dd>
+            </div>
+            <div>
+              <dt data-i18n="cuando"></dt>
+              <dd id="avCuando"></dd>
+            </div>
+          </dl>
+        </aside>
+
+        <div class="app">
+          <div class="app-mapa">
+            <div class="mapbox">
+              <svg id="map" role="img" data-i18n-aria="mapaAria"></svg>
+              <div class="mapctl">
+                <button class="chip" id="cFollow" aria-pressed="true" data-i18n="seguir"></button>
+                <button class="chip" id="cAll" aria-pressed="false" data-i18n="verTodo"></button>
+                <span class="zoom">
+                  <button class="chip" id="zin" data-i18n-aria="acercar">+</button>
+                  <button class="chip" id="zout" data-i18n-aria="alejar">−</button>
+                </span>
+              </div>
+            </div>
+            <div class="legend">
+              <span><i id="lgR" style="background: var(--r1)"></i><span id="lgRt"></span></span
+              ><span><i class="sw-est"></i><span data-i18n="lgEstacion"></span></span
+              ><span><i style="background: #3b5bdb"></i><span data-i18n="lgHotel"></span></span
+              ><span id="lgProp" hidden><i class="sw-est sw-prop"></i><span data-i18n="lgPropuesta"></span></span
+              ><span><i style="background: #0b7285"></i><span data-i18n="lgTarjeta"></span></span
+              ><span><i style="background: var(--warn)"></i><span data-i18n="lgSiguiente"></span></span
+              ><span><i style="background: #2e7d4f"></i><span data-i18n="lgVisitado"></span></span
+              ><span class="legend-datos" data-i18n="lgDatos"></span>
             </div>
           </div>
+          <aside class="side" aria-live="polite">
+            <div class="card card-dir">
+              <p class="lbl" data-i18n="dirActual"></p>
+              <div class="big" id="dir">—</div>
+              <div class="sub" id="dir2">—</div>
+            </div>
+            <div class="card">
+              <div class="hrow">
+                <div class="hicon done">✓</div>
+                <div>
+                  <p class="lbl" data-i18n="hotelLlegaron"></p>
+                  <div class="big" id="hNow">—</div>
+                  <div class="sub" id="hNow2">—</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="hrow">
+                <div class="hicon next">H</div>
+                <div>
+                  <p class="lbl" data-i18n="siguienteHotel"></p>
+                  <div class="big" id="hNext">—</div>
+                  <div class="sub" id="hNext2">—</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="hrow">
+                <div class="hicon card-ico">▭</div>
+                <div>
+                  <p class="lbl" data-i18n="puntoTarjeta"></p>
+                  <div class="big" id="cNext">—</div>
+                  <div class="sub" id="cNext2">—</div>
+                </div>
+              </div>
+            </div>
+          </aside>
         </div>
-        <div class="card">
-          <div class="hrow">
-            <div class="hicon next">H</div>
-            <div>
-              <p class="lbl" data-i18n="siguienteHotel"></p>
-              <div class="big" id="hNext">—</div>
-              <div class="sub" id="hNext2">—</div>
+
+        <div class="controls">
+          <div class="card card-ctl">
+            <div class="ctl ctl-fila">
+              <div class="seg" role="group" data-i18n-aria="modoAria">
+                <button class="b" id="mAuto" aria-pressed="true" data-i18n="auto"></button>
+                <button class="b" id="mMan" aria-pressed="false" data-i18n="manual"></button>
+              </div>
+              <div class="ctl">
+                <button class="b" id="prev" data-i18n="anterior"></button>
+                <button class="b pri" id="play"></button>
+                <button class="b" id="next" data-i18n="siguiente"></button>
+              </div>
+              <div class="ctl">
+                <label for="vel" class="lbl" data-i18n="velocidad"></label>
+                <select id="vel">
+                  <option value="10">×10</option>
+                  <option value="30" selected>×30</option>
+                  <option value="60">×60</option>
+                  <option value="120">×120</option>
+                </select>
+                <button class="b" id="reset" data-i18n="reiniciar"></button>
+              </div>
+            </div>
+            <input type="range" id="pos" min="0" max="1000" value="0" data-i18n-aria="posAria" />
+            <div class="prog"><span id="pA">—</span><span id="pT">—</span><span id="pB">—</span></div>
+            <p class="note" data-i18n="ayudaControles"></p>
+          </div>
+          <div class="card">
+            <p class="lbl" data-i18n="hotelesRecorrido"></p>
+            <div class="hlist" id="hlist"></div>
+            <p class="note" data-i18n="notaCaminata"></p>
+          </div>
+        </div>
+
+        <div class="senal">
+          <h3 class="senal-titulo" data-i18n="senalTitulo"></h3>
+          <div class="sign" id="sign">
+            <div class="sg-main">
+              <div class="sg-head" id="sHead"><span class="badge" id="sBadge">R1</span><span id="sName"></span></div>
+              <p class="sg-dest" id="sDest"></p>
+              <ul class="sg-rows" id="sRows"></ul>
+              <p class="sg-nota" data-i18n="senalNota"></p>
+            </div>
+            <div class="sg-side">
+              <div class="k" id="sK"></div>
+              <div class="st" id="sSt">—</div>
+              <div class="k" id="sK2"></div>
+              <div class="sg-dir" id="sDir">—</div>
+              <ul id="sList"></ul>
+              <div class="langs" role="group" data-i18n-aria="letreroAria">
+                <button class="chip" data-l="es" aria-pressed="true">ES</button>
+                <button class="chip" data-l="en" aria-pressed="false">EN</button>
+                <button class="chip" data-l="pt" aria-pressed="false">PT</button>
+                <button class="chip" id="rot" aria-pressed="true" data-i18n="rotar"></button>
+              </div>
             </div>
           </div>
+          <p class="note" data-i18n="notaLetrero"></p>
         </div>
-        <div class="card">
-          <div class="hrow">
-            <div class="hicon card-ico">▭</div>
-            <div>
-              <p class="lbl" data-i18n="puntoTarjeta"></p>
-              <div class="big" id="cNext">—</div>
-              <div class="sub" id="cNext2">—</div>
-            </div>
-          </div>
+      </section>
+
+      <section class="band p-sec p-alt" id="p-points"></section>
+
+      <section class="band pass" id="pass" aria-labelledby="passTitulo">
+        <div class="pass-cab">
+          <p class="p-etq" data-i18n="passEtiqueta"></p>
+          <h2 id="passTitulo" data-i18n="passTitulo"></h2>
+          <p class="pass-lead" data-i18n="passLead"></p>
         </div>
-      </aside>
-    </section>
-
-    <section class="band controls" style="padding-top: 0">
-      <div class="card">
-        <div class="ctl" style="justify-content: space-between">
-          <div class="seg" role="group" data-i18n-aria="modoAria">
-            <button class="b" id="mAuto" aria-pressed="true" data-i18n="auto"></button>
-            <button class="b" id="mMan" aria-pressed="false" data-i18n="manual"></button>
-          </div>
-          <div class="ctl">
-            <button class="b" id="prev" data-i18n="anterior"></button>
-            <button class="b pri" id="play"></button>
-            <button class="b" id="next" data-i18n="siguiente"></button>
-          </div>
-          <div class="ctl">
-            <label for="vel" class="lbl" style="margin: 0" data-i18n="velocidad"></label>
-            <select id="vel">
-              <option value="10">×10</option>
-              <option value="30" selected>×30</option>
-              <option value="60">×60</option>
-              <option value="120">×120</option>
-            </select>
-            <button class="b" id="reset" data-i18n="reiniciar"></button>
-          </div>
+        <ol class="pass-pasos">
+          <li>
+            <span class="n">1</span>
+            <h3 data-i18n="passP1T"></h3>
+            <p data-i18n="passP1"></p>
+          </li>
+          <li>
+            <span class="n">2</span>
+            <h3 data-i18n="passP2T"></h3>
+            <p data-i18n="passP2"></p>
+          </li>
+          <li>
+            <span class="n">3</span>
+            <h3 data-i18n="passP3T"></h3>
+            <p data-i18n="passP3"></p>
+          </li>
+        </ol>
+        <div class="pass-donde">
+          <h3 data-i18n="passDondeT"></h3>
+          <ul>
+            <li><strong data-i18n="passL1T"></strong><span data-i18n="passL1"></span></li>
+            <li><strong data-i18n="passL2T"></strong><span data-i18n="passL2"></span></li>
+            <li><strong data-i18n="passL3T"></strong><span data-i18n="passL3"></span></li>
+          </ul>
         </div>
-        <input type="range" id="pos" min="0" max="1000" value="0" data-i18n-aria="posAria" />
-        <div class="prog"><span id="pA">—</span><span id="pT">—</span><span id="pB">—</span></div>
-        <p class="note" style="margin: 6px 0 0" data-i18n="ayudaControles"></p>
-      </div>
-      <div class="card">
-        <p class="lbl" data-i18n="hotelesRecorrido"></p>
-        <div class="hlist" id="hlist"></div>
-        <p class="note" style="margin: 6px 0 0" data-i18n="notaCaminata"></p>
-      </div>
-    </section>
+        <p class="pass-hoy" data-i18n="passHoy"></p>
+        <p class="pass-aviso" data-i18n="passAviso"></p>
+      </section>
 
-    <section class="band" style="padding-top: 0">
-      <h2 data-i18n="senalTitulo"></h2>
-      <div class="sign" id="sign">
-        <div class="sg-main">
-          <div class="sg-head" id="sHead"><span class="badge" id="sBadge">R1</span><span id="sName"></span></div>
-          <p class="sg-dest" id="sDest"></p>
-          <ul class="sg-rows" id="sRows"></ul>
-          <p class="sg-nota" data-i18n="senalNota"></p>
-        </div>
-        <div>
-          <div class="k" id="sK"></div>
-          <div class="st" id="sSt">—</div>
-          <div class="k" id="sK2" style="margin-top: 10px"></div>
-          <div style="font-size: 18px" id="sDir">—</div>
-          <ul id="sList" style="margin-top: 14px"></ul>
-          <div class="langs" role="group" data-i18n-aria="letreroAria">
-            <button class="chip" data-l="es" aria-pressed="true">Español</button>
-            <button class="chip" data-l="en" aria-pressed="false">English</button>
-            <button class="chip" data-l="pt" aria-pressed="false">Português</button>
-            <button class="chip" id="rot" aria-pressed="true" data-i18n="rotar"></button>
-          </div>
-        </div>
-      </div>
-      <p class="note" data-i18n="notaLetrero"></p>
-    </section>
+      <section class="band p-sec p-alt" id="p-connect"></section>
+      <section class="band p-sec" id="p-flujo"></section>
 
-    <section class="band p-sec" id="p-points"></section>
+      <section class="band p-sec p-alt" aria-labelledby="mejorasTitulo">
+        <div class="p-cab"><h2 id="mejorasTitulo" data-i18n="mejorasTitulo"></h2></div>
+        <div class="grid2" id="mejoras"></div>
+      </section>
 
-    <section class="band pass" aria-labelledby="passTitulo">
-      <div class="pass-cab">
-        <p class="pass-etq" data-i18n="passEtiqueta"></p>
-        <h2 id="passTitulo" data-i18n="passTitulo"></h2>
-        <p class="pass-lead" data-i18n="passLead"></p>
-      </div>
-      <ol class="pass-pasos">
-        <li><span class="n">1</span><h3 data-i18n="passP1T"></h3><p data-i18n="passP1"></p></li>
-        <li><span class="n">2</span><h3 data-i18n="passP2T"></h3><p data-i18n="passP2"></p></li>
-        <li><span class="n">3</span><h3 data-i18n="passP3T"></h3><p data-i18n="passP3"></p></li>
-      </ol>
-      <div class="pass-donde">
-        <h3 data-i18n="passDondeT"></h3>
-        <ul>
-          <li><strong data-i18n="passL1T"></strong><span data-i18n="passL1"></span></li>
-          <li><strong data-i18n="passL2T"></strong><span data-i18n="passL2"></span></li>
-          <li><strong data-i18n="passL3T"></strong><span data-i18n="passL3"></span></li>
-        </ul>
-      </div>
-      <p class="pass-hoy" data-i18n="passHoy"></p>
-      <p class="pass-aviso" data-i18n="passAviso"></p>
-    </section>
+      <section class="band p-sec" id="fuentes-sec" aria-labelledby="fuentesTitulo">
+        <div class="p-cab"><h2 id="fuentesTitulo" data-i18n="fuentesTitulo"></h2></div>
+        <!-- Los textos de las fuentes (con sus enlaces) están en js/textos-ui.js -->
+        <ol class="src" id="fuentes"></ol>
+      </section>
 
-    <section class="band p-sec" id="p-connect"></section>
-    <section class="band p-sec p-alt" id="p-flujo"></section>
+      <section class="band p-sec p-cierre" id="p-cierre"></section>
+    </main>
 
-    <section class="band" style="padding-top: 0">
-      <h2 data-i18n="mejorasTitulo"></h2>
-      <div class="grid2" id="mejoras"></div>
-    </section>
-
-    <section class="band" style="padding-top: 0">
-      <h2 data-i18n="fuentesTitulo"></h2>
-      <!-- Los textos de las fuentes (con sus enlaces) están en js/textos-ui.js -->
-      <ul class="src" id="fuentes"></ul>
-    </section>
-
-    <section class="band p-sec p-cierre" id="p-cierre"></section>
+    <footer class="band pie">
+      <img src="assets/baq360.png" alt="" width="90" height="51" />
+      <p>Barranquilla 360 · BAQ Routes · BAQ Points · BAQ Connect</p>
+    </footer>
 
     <noscript
       ><p class="band">Este simulador necesita JavaScript activado. · This simulator needs JavaScript.</p></noscript
