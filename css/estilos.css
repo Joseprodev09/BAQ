@@ -1,0 +1,539 @@
+/* =========================================================
+   Estilos del Simulador Transmetro Barranquilla
+   ---------------------------------------------------------
+   1. Variables de color (modo claro y oscuro)
+   2. Estructura general
+   3. Mapa
+   4. Panel de estado
+   5. Controles
+   6. Letrero para turistas
+   7. Mejoras y fuentes
+   8. Adaptación a pantallas pequeñas
+   Tipografías: Atkinson Hyperlegible (texto, diseñada para
+   máxima legibilidad) y Archivo (títulos).
+   ========================================================= */
+/* 1. Variables de color */
+:root {
+  color-scheme: light dark;
+  --bg: light-dark(#f4efe4, #10161c);
+  --panel: light-dark(#fffdf8, #18212a);
+  --ink: light-dark(#17202a, #e9eef2);
+  --mute: light-dark(#5b6670, #9aa7b2);
+  --line: light-dark(#d9d0bf, #2b3742);
+  --road: light-dark(#ffffff, #24303b);
+  --road2: light-dark(#e6dccb, #1d2731);
+  --water: light-dark(#9cc9e0, #1c4058);
+  --r1: #d7262e;
+  --b1: #0a8f5a;
+  --sign: #0e2238;
+  --signy: #ffd400;
+  --warn: #e86a10;
+}
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+  min-width: 0;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font:
+    16px/1.5 'Atkinson Hyperlegible',
+    system-ui,
+    sans-serif;
+  overflow-x: clip;
+}
+h1,
+h2 {
+  font-family: Archivo, system-ui, sans-serif;
+  font-weight: 800;
+  line-height: 1.05;
+  text-wrap: balance;
+  margin: 0;
+}
+h1 {
+  font-size: clamp(26px, 3.4vw, 40px);
+}
+h2 {
+  font-size: clamp(22px, 2.6vw, 30px);
+  margin-bottom: 12px;
+}
+a {
+  color: inherit;
+}
+.band {
+  padding: clamp(18px, 3vw, 40px) max(4vw, 14px);
+}
+.top {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px 24px;
+  align-items: start;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.top p {
+  margin: 4px 0 0;
+  color: var(--mute);
+  max-width: 70ch;
+}
+.app {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 16px;
+  padding-top: 0;
+}
+.mapbox {
+  position: relative;
+  background: light-dark(#efe6d3, #121b23);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 520px;
+}
+#map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: grab;
+}
+.mapctl {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.chip {
+  font:
+    700 14px 'Atkinson Hyperlegible',
+    sans-serif;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 8px 14px;
+  min-height: 40px;
+  cursor: pointer;
+}
+.chip[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--bg);
+}
+.legend {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--mute);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+.legend i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  vertical-align: -1px;
+  margin-right: 4px;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+.lbl {
+  font-size: 13px;
+  color: var(--mute);
+  font-weight: 700;
+  margin: 0 0 2px;
+}
+.big {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.sub {
+  font-size: 14px;
+  color: var(--mute);
+  margin-top: 2px;
+}
+.hrow {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+.hicon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font:
+    800 17px Archivo,
+    sans-serif;
+}
+.done {
+  background: #2e7d4f;
+}
+.next {
+  background: var(--warn);
+}
+.controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 16px;
+  padding-top: 12px;
+}
+.ctl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+button.b {
+  font:
+    700 15px 'Atkinson Hyperlegible',
+    sans-serif;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  cursor: pointer;
+}
+button.b.pri {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+button.b:focus-visible,
+.chip:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--signy);
+  outline-offset: 2px;
+}
+select {
+  font:
+    16px 'Atkinson Hyperlegible',
+    sans-serif;
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  padding: 0 10px;
+}
+.seg {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.seg button {
+  border: 0;
+  border-radius: 0;
+  min-height: 44px;
+}
+.seg button[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--bg);
+}
+input[type='range'] {
+  width: 100%;
+  accent-color: var(--r1);
+  min-height: 44px;
+}
+.prog {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--mute);
+}
+.sign {
+  background: var(--sign);
+  color: #fff;
+  border-radius: 16px;
+  padding: clamp(16px, 2.4vw, 28px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 20px;
+  position: relative;
+}
+.sign .route {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font:
+    800 16px Archivo,
+    sans-serif;
+}
+.badge {
+  background: var(--r1);
+  color: #fff;
+  border-radius: 8px;
+  padding: 2px 10px;
+  font:
+    800 22px Archivo,
+    sans-serif;
+}
+.sign .k {
+  color: var(--signy);
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 14px;
+}
+.sign .st {
+  font:
+    800 clamp(28px, 4vw, 46px) / 1.05 Archivo,
+    sans-serif;
+  margin-top: 2px;
+}
+.sign ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.sign li {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  font-size: 17px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+.sign li b {
+  display: block;
+}
+.sign li span {
+  font-size: 14px;
+  color: #c9d6e2;
+}
+.pic {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--signy);
+  color: var(--sign);
+  display: grid;
+  place-items: center;
+}
+.langs {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.langs .chip {
+  background: transparent;
+  color: #fff;
+  border-color: #4b6075;
+}
+.langs .chip[aria-pressed='true'] {
+  background: var(--signy);
+  color: var(--sign);
+  border-color: var(--signy);
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+.mejora {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+.mejora h3 {
+  font:
+    800 18px Archivo,
+    sans-serif;
+  margin: 0 0 4px;
+}
+.mejora p {
+  margin: 0;
+  font-size: 15px;
+}
+.mejora .why {
+  color: var(--mute);
+  font-size: 14px;
+  margin-top: 6px;
+}
+.hlist {
+  display: grid;
+  gap: 6px;
+  max-height: 210px;
+  overflow: auto;
+  padding-right: 4px;
+}
+.hlist label {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 8px;
+  font-size: 15px;
+  align-items: start;
+  cursor: pointer;
+}
+.hlist input {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+.note {
+  font-size: 13px;
+  color: var(--mute);
+}
+.src li {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+@media (max-width: 980px) {
+  .app,
+  .controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .mapbox {
+    min-height: 440px;
+  }
+}
+@media (max-width: 600px) {
+  .chip {
+    padding: 6px 11px;
+    min-height: 38px;
+    font-size: 13px;
+  }
+  .sign {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .mapbox {
+    min-height: 380px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+/* Marca BAQ360 en la cabecera */
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.marca .logo {
+  width: 150px;
+  height: auto;
+  flex: none;
+}
+@media (max-width: 600px) {
+  .marca {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .marca .logo {
+    width: 120px;
+  }
+}
+
+/* Herramientas de la esquina superior derecha: modo oscuro e idioma */
+.herramientas {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: none;
+}
+.chip.icono {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+/* El botón muestra la luna en modo claro y el sol en modo oscuro */
+.chip.icono .sol {
+  display: none;
+}
+:root[data-theme='dark'] .chip.icono .sol {
+  display: block;
+}
+:root[data-theme='dark'] .chip.icono .luna {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .chip.icono .sol {
+    display: block;
+  }
+  :root:not([data-theme='light']) .chip.icono .luna {
+    display: none;
+  }
+}
+/* El botón de tema no debe verse "activado" en negro: solo cambia de icono */
+#tema[aria-pressed='true'] {
+  background: var(--panel);
+  color: var(--ink);
+}
+.selector-idioma {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 999px;
+  padding: 0 4px 0 12px;
+  color: var(--ink);
+}
+.selector-idioma select {
+  border: 0;
+  background: transparent;
+  min-height: 40px;
+  font-weight: 700;
+  padding-right: 6px;
+}
+/* Texto solo para lectores de pantalla */
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.selector-ruta {
+  padding-top: 0;
+  padding-bottom: 14px;
+}
+@media (max-width: 760px) {
+  .top {
+    flex-direction: column-reverse;
+  }
+  .herramientas {
+    align-self: flex-end;
+  }
+}
+@media (max-width: 420px) {
+  #temaTx {
+    display: none;
+  }
+}

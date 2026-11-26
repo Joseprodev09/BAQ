@@ -1,0 +1,108 @@
+{
+ "fuente": "OpenStreetMap (© colaboradores de OpenStreetMap, licencia ODbL)",
+ "consultado": "2026-11-26",
+ "estaciones": [
+  {
+   "id": "ps",
+   "nombre": "Portal de Soledad",
+   "lat": 10.90742,
+   "lon": -74.8003
+  },
+  {
+   "id": "pg",
+   "nombre": "Pacho Galán",
+   "lat": 10.91523,
+   "lon": -74.7991
+  },
+  {
+   "id": "pr",
+   "nombre": "Pedro Ramayá Beltrán",
+   "lat": 10.92128,
+   "lon": -74.79919
+  },
+  {
+   "id": "jb",
+   "nombre": "Joaquín Barrios Polo",
+   "lat": 10.933,
+   "lon": -74.79921
+  },
+  {
+   "id": "ba",
+   "nombre": "Buenos Aires",
+   "lat": 10.94202,
+   "lon": -74.79961
+  },
+  {
+   "id": "l8",
+   "nombre": "La Ocho",
+   "lat": 10.947,
+   "lon": -74.79976
+  },
+  {
+   "id": "l14",
+   "nombre": "La Catorce",
+   "lat": 10.95493,
+   "lon": -74.79646
+  },
+  {
+   "id": "l21",
+   "nombre": "La Veintiuna",
+   "lat": 10.96053,
+   "lon": -74.79372
+  },
+  {
+   "id": "at",
+   "nombre": "Atlántico",
+   "lat": 10.96885,
+   "lon": -74.79025
+  },
+  {
+   "id": "ch",
+   "nombre": "Chiquinquirá",
+   "lat": 10.9772,
+   "lon": -74.78782
+  },
+  {
+   "id": "ar",
+   "nombre": "La Arenosa",
+   "lat": 10.98231,
+   "lon": -74.7864
+  },
+  {
+   "id": "ca",
+   "nombre": "La Catedral",
+   "lat": 10.98845,
+   "lon": -74.78879
+  },
+  {
+   "id": "ac",
+   "nombre": "Alfredo Correa de Andréis",
+   "lat": 10.99056,
+   "lon": -74.79634
+  },
+  {
+   "id": "ef",
+   "nombre": "Esthercita Forero",
+   "lat": 10.99276,
+   "lon": -74.80275
+  },
+  {
+   "id": "ja",
+   "nombre": "Joe Arroyo",
+   "lat": 10.99467,
+   "lon": -74.80772
+  },
+  {
+   "id": "bab",
+   "nombre": "Barrio Abajo",
+   "lat": 10.98707,
+   "lon": -74.78409
+  },
+  {
+   "id": "pc",
+   "nombre": "Parque Cultural del Caribe",
+   "lat": 10.98592,
+   "lon": -74.77844
+  }
+ ]
+}

@@ -1,0 +1,1311 @@
+{
+ "fuente": "OpenStreetMap (© colaboradores de OpenStreetMap, licencia ODbL)",
+ "consultado": "2026-11-26",
+ "nota": "trazado: puntos del recorrido en orden; via = avenida por la que va el bus; cruce = calle o carrera que cruza en ese punto.",
+ "rutas": [
+  {
+   "id": "R1",
+   "nombre": "R1 · Portal de Soledad → Joe Arroyo",
+   "destino": "Joe Arroyo",
+   "color": "#d7262e",
+   "relacionOSM": 2382291,
+   "estaciones": [
+    "ps",
+    "pg",
+    "pr",
+    "jb",
+    "ba",
+    "l8",
+    "l14",
+    "l21",
+    "at",
+    "ch",
+    "ar",
+    "ca",
+    "ac",
+    "ef",
+    "ja"
+   ],
+   "trazado": [
+    {
+     "lat": 10.90745,
+     "lon": -74.80004,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13D"
+    },
+    {
+     "lat": 10.90803,
+     "lon": -74.79962,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13D"
+    },
+    {
+     "lat": 10.90829,
+     "lon": -74.79914,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13D"
+    },
+    {
+     "lat": 10.90927,
+     "lon": -74.79905,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.91106,
+     "lon": -74.79906,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 15"
+    },
+    {
+     "lat": 10.91204,
+     "lon": -74.79906,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 15A"
+    },
+    {
+     "lat": 10.91457,
+     "lon": -74.79905,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 16"
+    },
+    {
+     "lat": 10.91528,
+     "lon": -74.79904,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 16B"
+    },
+    {
+     "lat": 10.91583,
+     "lon": -74.79905,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 17"
+    },
+    {
+     "lat": 10.91681,
+     "lon": -74.79905,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 17D"
+    },
+    {
+     "lat": 10.91708,
+     "lon": -74.79908,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 18"
+    },
+    {
+     "lat": 10.91747,
+     "lon": -74.79911,
+     "via": "Avenida Murillo",
+     "cruce": "Calle 63"
+    },
+    {
+     "lat": 10.91968,
+     "lon": -74.7991,
+     "via": "Avenida Murillo",
+     "cruce": "Arroyo El Salado"
+    },
+    {
+     "lat": 10.92028,
+     "lon": -74.79913,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 22D"
+    },
+    {
+     "lat": 10.92082,
+     "lon": -74.79914,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 23"
+    },
+    {
+     "lat": 10.92121,
+     "lon": -74.79914,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 24"
+    },
+    {
+     "lat": 10.92149,
+     "lon": -74.79913,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 18 Sur"
+    },
+    {
+     "lat": 10.92236,
+     "lon": -74.79908,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 16A Sur"
+    },
+    {
+     "lat": 10.92268,
+     "lon": -74.79907,
+     "via": "Avenida Murillo",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 10.92423,
+     "lon": -74.79908,
+     "via": "Avenida Murillo",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 10.92576,
+     "lon": -74.7991,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 11 Sur"
+    },
+    {
+     "lat": 10.92813,
+     "lon": -74.79911,
+     "via": "Avenida Murillo",
+     "cruce": "Vía Estadio"
+    },
+    {
+     "lat": 10.92995,
+     "lon": -74.79913,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 1 Sur"
+    },
+    {
+     "lat": 10.93112,
+     "lon": -74.79913,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 1B"
+    },
+    {
+     "lat": 10.93195,
+     "lon": -74.79913,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 1E"
+    },
+    {
+     "lat": 10.93246,
+     "lon": -74.79914,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 1H"
+    },
+    {
+     "lat": 10.9329,
+     "lon": -74.79914,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 1J"
+    },
+    {
+     "lat": 10.9334,
+     "lon": -74.79915,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 2"
+    },
+    {
+     "lat": 10.93406,
+     "lon": -74.79915,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 2B"
+    },
+    {
+     "lat": 10.93689,
+     "lon": -74.79917,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 3B"
+    },
+    {
+     "lat": 10.93745,
+     "lon": -74.79918,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 3C"
+    },
+    {
+     "lat": 10.93821,
+     "lon": -74.79918,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 4"
+    },
+    {
+     "lat": 10.93871,
+     "lon": -74.79921,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 4A"
+    },
+    {
+     "lat": 10.93987,
+     "lon": -74.79931,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 5B"
+    },
+    {
+     "lat": 10.94046,
+     "lon": -74.79936,
+     "via": "Avenida Murillo",
+     "cruce": "Calle 44B"
+    },
+    {
+     "lat": 10.9412,
+     "lon": -74.79949,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7"
+    },
+    {
+     "lat": 10.94196,
+     "lon": -74.79954,
+     "via": "Avenida Murillo",
+     "cruce": "Calle 44B"
+    },
+    {
+     "lat": 10.94259,
+     "lon": -74.79959,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7C"
+    },
+    {
+     "lat": 10.94328,
+     "lon": -74.79958,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7D"
+    },
+    {
+     "lat": 10.94554,
+     "lon": -74.79965,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7H"
+    },
+    {
+     "lat": 10.94606,
+     "lon": -74.79966,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8"
+    },
+    {
+     "lat": 10.94669,
+     "lon": -74.79968,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8A"
+    },
+    {
+     "lat": 10.94729,
+     "lon": -74.7997,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8B"
+    },
+    {
+     "lat": 10.94768,
+     "lon": -74.79974,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8C"
+    },
+    {
+     "lat": 10.94832,
+     "lon": -74.7998,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8D"
+    },
+    {
+     "lat": 10.94861,
+     "lon": -74.79983,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8H"
+    },
+    {
+     "lat": 10.94916,
+     "lon": -74.79985,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 9B"
+    },
+    {
+     "lat": 10.94995,
+     "lon": -74.79985,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 9F"
+    },
+    {
+     "lat": 10.95029,
+     "lon": -74.7998,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 10.95088,
+     "lon": -74.79951,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 10.95114,
+     "lon": -74.79927,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10C"
+    },
+    {
+     "lat": 10.95164,
+     "lon": -74.79869,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10D"
+    },
+    {
+     "lat": 10.9523,
+     "lon": -74.7979,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10E"
+    },
+    {
+     "lat": 10.95301,
+     "lon": -74.79727,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 11"
+    },
+    {
+     "lat": 10.95357,
+     "lon": -74.797,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13C"
+    },
+    {
+     "lat": 10.95427,
+     "lon": -74.79668,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.95563,
+     "lon": -74.79606,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 17"
+    },
+    {
+     "lat": 10.95686,
+     "lon": -74.79549,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 18"
+    },
+    {
+     "lat": 10.95836,
+     "lon": -74.79476,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 19"
+    },
+    {
+     "lat": 10.95928,
+     "lon": -74.79432,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 20"
+    },
+    {
+     "lat": 10.96037,
+     "lon": -74.79373,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 20"
+    },
+    {
+     "lat": 10.96122,
+     "lon": -74.79333,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 21"
+    },
+    {
+     "lat": 10.96221,
+     "lon": -74.793,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 21"
+    },
+    {
+     "lat": 10.96327,
+     "lon": -74.7925,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 21B"
+    },
+    {
+     "lat": 10.96494,
+     "lon": -74.7917,
+     "via": "Avenida Murillo",
+     "cruce": "Avenida de La Cordialidad"
+    },
+    {
+     "lat": 10.96531,
+     "lon": -74.79153,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 23"
+    },
+    {
+     "lat": 10.96597,
+     "lon": -74.79125,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 23B"
+    },
+    {
+     "lat": 10.96638,
+     "lon": -74.79106,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 24"
+    },
+    {
+     "lat": 10.96741,
+     "lon": -74.79074,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 25"
+    },
+    {
+     "lat": 10.96802,
+     "lon": -74.79046,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 26"
+    },
+    {
+     "lat": 10.96944,
+     "lon": -74.79002,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 27"
+    },
+    {
+     "lat": 10.97188,
+     "lon": -74.78939,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 30"
+    },
+    {
+     "lat": 10.97319,
+     "lon": -74.78898,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 31"
+    },
+    {
+     "lat": 10.97398,
+     "lon": -74.78873,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 32"
+    },
+    {
+     "lat": 10.975,
+     "lon": -74.78842,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 33"
+    },
+    {
+     "lat": 10.97665,
+     "lon": -74.7879,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 35"
+    },
+    {
+     "lat": 10.97794,
+     "lon": -74.78758,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 36"
+    },
+    {
+     "lat": 10.97976,
+     "lon": -74.78705,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 38"
+    },
+    {
+     "lat": 10.98028,
+     "lon": -74.78688,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 39"
+    },
+    {
+     "lat": 10.9814,
+     "lon": -74.78659,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 41"
+    },
+    {
+     "lat": 10.98193,
+     "lon": -74.78645,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 42"
+    },
+    {
+     "lat": 10.98285,
+     "lon": -74.7862,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 43"
+    },
+    {
+     "lat": 10.98354,
+     "lon": -74.78596,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 43"
+    },
+    {
+     "lat": 10.98454,
+     "lon": -74.78569,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 44"
+    },
+    {
+     "lat": 10.98639,
+     "lon": -74.78515,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 45"
+    },
+    {
+     "lat": 10.98711,
+     "lon": -74.78491,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 46"
+    },
+    {
+     "lat": 10.98738,
+     "lon": -74.78498,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Murillo"
+    },
+    {
+     "lat": 10.98765,
+     "lon": -74.78596,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 47"
+    },
+    {
+     "lat": 10.98805,
+     "lon": -74.78739,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 48"
+    },
+    {
+     "lat": 10.98822,
+     "lon": -74.78795,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 50"
+    },
+    {
+     "lat": 10.98836,
+     "lon": -74.78838,
+     "via": "Avenida Carrera 46",
+     "cruce": "Plaza de la Paz"
+    },
+    {
+     "lat": 10.98867,
+     "lon": -74.78939,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 53"
+    },
+    {
+     "lat": 10.98912,
+     "lon": -74.79102,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 54"
+    },
+    {
+     "lat": 10.98931,
+     "lon": -74.79172,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 55"
+    },
+    {
+     "lat": 10.99019,
+     "lon": -74.79488,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 59"
+    },
+    {
+     "lat": 10.99038,
+     "lon": -74.79558,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 60"
+    },
+    {
+     "lat": 10.9908,
+     "lon": -74.79706,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 62"
+    },
+    {
+     "lat": 10.99117,
+     "lon": -74.79841,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 64"
+    },
+    {
+     "lat": 10.99137,
+     "lon": -74.79917,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 65"
+    },
+    {
+     "lat": 10.99175,
+     "lon": -74.80058,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 67"
+    },
+    {
+     "lat": 10.99194,
+     "lon": -74.80126,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 68"
+    },
+    {
+     "lat": 10.99233,
+     "lon": -74.80195,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 69"
+    },
+    {
+     "lat": 10.99295,
+     "lon": -74.80303,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 70"
+    },
+    {
+     "lat": 10.99425,
+     "lon": -74.80542,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.99452,
+     "lon": -74.80601,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 72"
+    },
+    {
+     "lat": 10.99481,
+     "lon": -74.80643,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.99512,
+     "lon": -74.80704,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 73"
+    },
+    {
+     "lat": 10.9945,
+     "lon": -74.80775,
+     "via": "Calle 74",
+     "cruce": "Carrera 45"
+    },
+    {
+     "lat": 10.99421,
+     "lon": -74.80793,
+     "via": "Calle 74",
+     "cruce": "Carrera 45"
+    }
+   ]
+  },
+  {
+   "id": "B1",
+   "nombre": "B1 · Portal de Soledad → Parque Cultural del Caribe",
+   "destino": "Parque Cultural del Caribe",
+   "color": "#0a8f5a",
+   "relacionOSM": 2382289,
+   "estaciones": [
+    "ps",
+    "pg",
+    "pr",
+    "jb",
+    "ba",
+    "l8",
+    "l14",
+    "l21",
+    "at",
+    "ch",
+    "ar",
+    "bab",
+    "pc"
+   ],
+   "trazado": [
+    {
+     "lat": 10.90745,
+     "lon": -74.80004,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13D"
+    },
+    {
+     "lat": 10.90803,
+     "lon": -74.79962,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13D"
+    },
+    {
+     "lat": 10.90829,
+     "lon": -74.79914,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13D"
+    },
+    {
+     "lat": 10.90927,
+     "lon": -74.79905,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.91106,
+     "lon": -74.79906,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 15"
+    },
+    {
+     "lat": 10.91204,
+     "lon": -74.79906,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 15A"
+    },
+    {
+     "lat": 10.91457,
+     "lon": -74.79905,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 16"
+    },
+    {
+     "lat": 10.91528,
+     "lon": -74.79904,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 16B"
+    },
+    {
+     "lat": 10.91583,
+     "lon": -74.79905,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 17"
+    },
+    {
+     "lat": 10.91681,
+     "lon": -74.79905,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 17D"
+    },
+    {
+     "lat": 10.91708,
+     "lon": -74.79908,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 18"
+    },
+    {
+     "lat": 10.91747,
+     "lon": -74.79911,
+     "via": "Avenida Murillo",
+     "cruce": "Calle 63"
+    },
+    {
+     "lat": 10.91968,
+     "lon": -74.7991,
+     "via": "Avenida Murillo",
+     "cruce": "Arroyo El Salado"
+    },
+    {
+     "lat": 10.92028,
+     "lon": -74.79913,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 22D"
+    },
+    {
+     "lat": 10.92082,
+     "lon": -74.79914,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 23"
+    },
+    {
+     "lat": 10.92121,
+     "lon": -74.79914,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 24"
+    },
+    {
+     "lat": 10.92149,
+     "lon": -74.79913,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 18 Sur"
+    },
+    {
+     "lat": 10.92236,
+     "lon": -74.79908,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 16A Sur"
+    },
+    {
+     "lat": 10.92268,
+     "lon": -74.79907,
+     "via": "Avenida Murillo",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 10.92423,
+     "lon": -74.79908,
+     "via": "Avenida Murillo",
+     "cruce": "Avenida Circunvalar"
+    },
+    {
+     "lat": 10.92576,
+     "lon": -74.7991,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 11 Sur"
+    },
+    {
+     "lat": 10.92813,
+     "lon": -74.79911,
+     "via": "Avenida Murillo",
+     "cruce": "Vía Estadio"
+    },
+    {
+     "lat": 10.92995,
+     "lon": -74.79913,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 1 Sur"
+    },
+    {
+     "lat": 10.93112,
+     "lon": -74.79913,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 1B"
+    },
+    {
+     "lat": 10.93195,
+     "lon": -74.79913,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 1E"
+    },
+    {
+     "lat": 10.93246,
+     "lon": -74.79914,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 1H"
+    },
+    {
+     "lat": 10.9329,
+     "lon": -74.79914,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 1J"
+    },
+    {
+     "lat": 10.9334,
+     "lon": -74.79915,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 2"
+    },
+    {
+     "lat": 10.93406,
+     "lon": -74.79915,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 2B"
+    },
+    {
+     "lat": 10.93689,
+     "lon": -74.79917,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 3B"
+    },
+    {
+     "lat": 10.93745,
+     "lon": -74.79918,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 3C"
+    },
+    {
+     "lat": 10.93821,
+     "lon": -74.79918,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 4"
+    },
+    {
+     "lat": 10.93871,
+     "lon": -74.79921,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 4A"
+    },
+    {
+     "lat": 10.93987,
+     "lon": -74.79931,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 5B"
+    },
+    {
+     "lat": 10.94046,
+     "lon": -74.79936,
+     "via": "Avenida Murillo",
+     "cruce": "Calle 44B"
+    },
+    {
+     "lat": 10.9412,
+     "lon": -74.79949,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7"
+    },
+    {
+     "lat": 10.94196,
+     "lon": -74.79954,
+     "via": "Avenida Murillo",
+     "cruce": "Calle 44B"
+    },
+    {
+     "lat": 10.94259,
+     "lon": -74.79959,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7C"
+    },
+    {
+     "lat": 10.94328,
+     "lon": -74.79958,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7D"
+    },
+    {
+     "lat": 10.94554,
+     "lon": -74.79965,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 7H"
+    },
+    {
+     "lat": 10.94606,
+     "lon": -74.79966,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8"
+    },
+    {
+     "lat": 10.94669,
+     "lon": -74.79968,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8A"
+    },
+    {
+     "lat": 10.94729,
+     "lon": -74.7997,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8B"
+    },
+    {
+     "lat": 10.94768,
+     "lon": -74.79974,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8C"
+    },
+    {
+     "lat": 10.94832,
+     "lon": -74.7998,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8D"
+    },
+    {
+     "lat": 10.94861,
+     "lon": -74.79983,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 8H"
+    },
+    {
+     "lat": 10.94916,
+     "lon": -74.79985,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 9B"
+    },
+    {
+     "lat": 10.94995,
+     "lon": -74.79985,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 9F"
+    },
+    {
+     "lat": 10.95029,
+     "lon": -74.7998,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 10.95088,
+     "lon": -74.79951,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10"
+    },
+    {
+     "lat": 10.95114,
+     "lon": -74.79927,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10C"
+    },
+    {
+     "lat": 10.95164,
+     "lon": -74.79869,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10D"
+    },
+    {
+     "lat": 10.9523,
+     "lon": -74.7979,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 10E"
+    },
+    {
+     "lat": 10.95301,
+     "lon": -74.79727,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 11"
+    },
+    {
+     "lat": 10.95357,
+     "lon": -74.797,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 13C"
+    },
+    {
+     "lat": 10.95427,
+     "lon": -74.79668,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 14"
+    },
+    {
+     "lat": 10.95563,
+     "lon": -74.79606,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 17"
+    },
+    {
+     "lat": 10.95686,
+     "lon": -74.79549,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 18"
+    },
+    {
+     "lat": 10.95836,
+     "lon": -74.79476,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 19"
+    },
+    {
+     "lat": 10.95928,
+     "lon": -74.79432,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 20"
+    },
+    {
+     "lat": 10.96037,
+     "lon": -74.79373,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 20"
+    },
+    {
+     "lat": 10.96122,
+     "lon": -74.79333,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 21"
+    },
+    {
+     "lat": 10.96221,
+     "lon": -74.793,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 21"
+    },
+    {
+     "lat": 10.96327,
+     "lon": -74.7925,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 21B"
+    },
+    {
+     "lat": 10.96494,
+     "lon": -74.7917,
+     "via": "Avenida Murillo",
+     "cruce": "Avenida de La Cordialidad"
+    },
+    {
+     "lat": 10.96531,
+     "lon": -74.79153,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 23"
+    },
+    {
+     "lat": 10.96597,
+     "lon": -74.79125,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 23B"
+    },
+    {
+     "lat": 10.96638,
+     "lon": -74.79106,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 24"
+    },
+    {
+     "lat": 10.96741,
+     "lon": -74.79074,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 25"
+    },
+    {
+     "lat": 10.96802,
+     "lon": -74.79046,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 26"
+    },
+    {
+     "lat": 10.96944,
+     "lon": -74.79002,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 27"
+    },
+    {
+     "lat": 10.97188,
+     "lon": -74.78939,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 30"
+    },
+    {
+     "lat": 10.97319,
+     "lon": -74.78898,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 31"
+    },
+    {
+     "lat": 10.97398,
+     "lon": -74.78873,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 32"
+    },
+    {
+     "lat": 10.975,
+     "lon": -74.78842,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 33"
+    },
+    {
+     "lat": 10.97665,
+     "lon": -74.7879,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 35"
+    },
+    {
+     "lat": 10.97794,
+     "lon": -74.78758,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 36"
+    },
+    {
+     "lat": 10.97976,
+     "lon": -74.78705,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 38"
+    },
+    {
+     "lat": 10.98028,
+     "lon": -74.78688,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 39"
+    },
+    {
+     "lat": 10.9814,
+     "lon": -74.78659,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 41"
+    },
+    {
+     "lat": 10.98193,
+     "lon": -74.78645,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 42"
+    },
+    {
+     "lat": 10.98285,
+     "lon": -74.7862,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 43"
+    },
+    {
+     "lat": 10.98354,
+     "lon": -74.78596,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 43"
+    },
+    {
+     "lat": 10.98454,
+     "lon": -74.78569,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 44"
+    },
+    {
+     "lat": 10.98639,
+     "lon": -74.78515,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 45"
+    },
+    {
+     "lat": 10.98711,
+     "lon": -74.78491,
+     "via": "Avenida Murillo",
+     "cruce": "Carrera 46"
+    },
+    {
+     "lat": 10.98714,
+     "lon": -74.78443,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Murillo"
+    },
+    {
+     "lat": 10.98693,
+     "lon": -74.7837,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 44"
+    },
+    {
+     "lat": 10.98679,
+     "lon": -74.78324,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 43"
+    },
+    {
+     "lat": 10.98664,
+     "lon": -74.78253,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 42"
+    },
+    {
+     "lat": 10.98646,
+     "lon": -74.78178,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 41"
+    },
+    {
+     "lat": 10.98629,
+     "lon": -74.78108,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 40"
+    },
+    {
+     "lat": 10.9862,
+     "lon": -74.78067,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 39"
+    },
+    {
+     "lat": 10.98609,
+     "lon": -74.77992,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 38"
+    },
+    {
+     "lat": 10.98605,
+     "lon": -74.77944,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 37"
+    },
+    {
+     "lat": 10.98595,
+     "lon": -74.77891,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 36"
+    },
+    {
+     "lat": 10.98578,
+     "lon": -74.77776,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 34B"
+    },
+    {
+     "lat": 10.98571,
+     "lon": -74.77709,
+     "via": "Avenida Carrera 46",
+     "cruce": "Calle 34"
+    },
+    {
+     "lat": 10.98565,
+     "lon": -74.77662,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 30"
+    },
+    {
+     "lat": 10.98533,
+     "lon": -74.77577,
+     "via": "Avenida Carrera 46",
+     "cruce": "Avenida Calle 30"
+    }
+   ]
+  }
+ ]
+}

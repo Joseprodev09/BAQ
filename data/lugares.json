@@ -1,0 +1,36 @@
+{
+ "fuente": "OpenStreetMap (© colaboradores de OpenStreetMap, licencia ODbL)",
+ "consultado": "2026-11-26",
+ "lugares": [
+  {
+   "nombre": "Estadio Metropolitano",
+   "lat": 10.92695,
+   "lon": -74.80051,
+   "tipo": "estadio"
+  },
+  {
+   "nombre": "Estadio Romelio Martínez",
+   "lat": 10.99382,
+   "lon": -74.80706,
+   "tipo": "estadio"
+  },
+  {
+   "nombre": "Catedral Metropolitana",
+   "lat": 10.9885,
+   "lon": -74.79061,
+   "tipo": "lugar"
+  },
+  {
+   "nombre": "Paseo Bolívar",
+   "lat": 10.98192,
+   "lon": -74.7778,
+   "tipo": "lugar"
+  },
+  {
+   "nombre": "Arroyo El Salado",
+   "lat": 10.91968,
+   "lon": -74.7991,
+   "tipo": "arroyo"
+  }
+ ]
+}

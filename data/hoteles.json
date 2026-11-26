@@ -1,0 +1,105 @@
+{
+ "fuente": "OpenStreetMap (© colaboradores de OpenStreetMap, licencia ODbL)",
+ "consultado": "2026-11-26",
+ "nota": "porDefecto = aparece marcado al abrir el simulador. Confirmar que cada hotel siga operando antes de una demostración.",
+ "hoteles": [
+  {
+   "nombre": "Hotel Samaritano",
+   "lat": 10.91092,
+   "lon": -74.79509,
+   "direccion": "Carrera 15 # 54-348, Soledad",
+   "porDefecto": true
+  },
+  {
+   "nombre": "Hotel San Diego",
+   "lat": 10.94597,
+   "lon": -74.79565,
+   "direccion": "",
+   "porDefecto": true
+  },
+  {
+   "nombre": "Hotel Canadiense",
+   "lat": 10.97937,
+   "lon": -74.78699,
+   "direccion": "Avenida Murillo # 36-142",
+   "porDefecto": true
+  },
+  {
+   "nombre": "Hotel Costa Mar",
+   "lat": 10.9791,
+   "lon": -74.78565,
+   "direccion": "",
+   "porDefecto": false
+  },
+  {
+   "nombre": "Hotel Avanty",
+   "lat": 10.98083,
+   "lon": -74.78217,
+   "direccion": "Calle 40 # 41-36",
+   "porDefecto": true
+  },
+  {
+   "nombre": "Hotel Colonial Inn",
+   "lat": 10.98366,
+   "lon": -74.78304,
+   "direccion": "",
+   "porDefecto": false
+  },
+  {
+   "nombre": "Hotel San Nicolás Colonial",
+   "lat": 10.98065,
+   "lon": -74.77767,
+   "direccion": "Calle 33 # 42-27",
+   "porDefecto": true
+  },
+  {
+   "nombre": "Hotel Majestic",
+   "lat": 10.99131,
+   "lon": -74.79083,
+   "direccion": "Carrera 53 # 54-41",
+   "porDefecto": true
+  },
+  {
+   "nombre": "Hotel Casa Boston",
+   "lat": 10.99116,
+   "lon": -74.79411,
+   "direccion": "Carrera 47",
+   "porDefecto": false
+  },
+  {
+   "nombre": "Villa Dilia Hotel",
+   "lat": 10.99352,
+   "lon": -74.80135,
+   "direccion": "Carrera 47 # 68-40",
+   "porDefecto": true
+  },
+  {
+   "nombre": "Hotel Atrium Plaza",
+   "lat": 10.99388,
+   "lon": -74.80952,
+   "direccion": "Carrera 44 # 74-85",
+   "porDefecto": true
+  },
+  {
+   "nombre": "Hotel Imperial",
+   "lat": 10.99339,
+   "lon": -74.80926,
+   "direccion": "Calle 74",
+   "porDefecto": false
+  },
+  {
+   "nombre": "Hotel Tarento",
+   "lat": 10.99602,
+   "lon": -74.80933,
+   "direccion": "Avenida Carrera 46",
+   "porDefecto": false
+  },
+  {
+   "nombre": "Hotel Puerta del Sol",
+   "lat": 10.99231,
+   "lon": -74.81095,
+   "direccion": "Calle 75",
+   "porDefecto": false
+  }
+ ]
+}
